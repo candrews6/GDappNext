@@ -544,6 +544,15 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.grid {
+  display: grid;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -556,4 +565,21 @@ video {
 body{
   background-color: aqua;
   font-weight: 900;
+}
+
+svg{
+  pointer-events: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+}
+
+.item {
+  width: 100%;
+  /* padding: 0 1rem; */
+  /* justify-content: space-evenly; */
+  text-align: center;
+  /* border: 1px dashed #000; */
 }
