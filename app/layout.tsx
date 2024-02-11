@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import $ from "jquery";
 // import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -8,37 +8,37 @@ import "aos/dist/aos.css";
 const Navbar = () => {
     const [show, setShow] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
-  
+
     const controlNavbar = () => {
-      if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
-        setShow(true); 
-      } else { // if scroll up show the navbar
-        setShow(false);  
-      }
-  
-      // remember current page location to use in the next move
-      setLastScrollY(window.scrollY); 
+        if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+            setShow(true);
+        } else { // if scroll up show the navbar
+            setShow(false);
+        }
+
+        // remember current page location to use in the next move
+        setLastScrollY(window.scrollY);
     };
-  
+
     useEffect(() => {
-      window.addEventListener('scroll', controlNavbar);
-    
-      //cleanup function
-      return () => {
-         window.removeEventListener('scroll', controlNavbar);
-      };
+        window.addEventListener('scroll', controlNavbar);
+
+        //cleanup function
+        return () => {
+            window.removeEventListener('scroll', controlNavbar);
+        };
     }, [lastScrollY]);
-  
+
     return (
-          <nav className={`active ${show && 'hidden'}`}>
-          <header className="justify-evenly grid grid-cols-9 w-10/12 text-center">
-                    <Link href="/" className="item col-start-1">WORK</Link>
-                    <Link href="/about" className="item col-start-5">ABOUT</Link>
-                    <Link href="/contact" className="item col-start-9">CONTACT</Link>
-                </header>
-          </nav>
+        <nav className={`active ${show && 'hidden'}`}>
+            <header className="justify-evenly grid grid-cols-9 w-10/12 text-center">
+                <Link href="/" className="item col-start-1 pl-4">WORK</Link>
+                <Link href="/about" className="item col-start-5">ABOUT</Link>
+                <Link href="/contact" className="item col-start-9 pr-12">CONTACT</Link>
+            </header>
+        </nav>
     );
-  };
+};
 
 export default function RootLayout({
     children,

@@ -17,9 +17,9 @@ const ExpandableText = ({ children, descriptionLength }) => {
         <div className='text'>
             {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
             <pre>
-            <span onClick={toggleText} className='toggle-button'>
-                {isExpanded ? 'See less' : 'See more...'}
-            </span>
+                <span onClick={toggleText} className='toggle-button'>
+                    {isExpanded ? 'See less' : 'See more...'}
+                </span>
             </pre>
         </div>
     );
@@ -28,10 +28,10 @@ const ExpandableText = ({ children, descriptionLength }) => {
 export default function Page() {
     return (
         <div className='px-14'>
-            <div className="py-10 px-4" style={{ display: "grid" }}>
+            <div className="py-10" style={{ display: "grid" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "auto auto" }} className="">
                     <p className="text-left text-4xl" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>
-                    <p className="text-left text-2xl" style={{  fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
+                    <p className="text-left text-2xl" style={{ fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
                     < h6 style={{ width: "50%" }}> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
