@@ -1,36 +1,44 @@
-import React from 'react';
-// import React,{useEffect} from "react";
+'use client'
+import Link from 'next/link';
+import React, {useState, useEffect} from "react";
 import $ from "jquery";
 // import AOS from 'aos';
 import "aos/dist/aos.css";
 
-var didScroll: any;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-$(window).on("scroll", function () {
-    didScroll = true;
-});
-setInterval(function () {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    if (Math.abs(lastScrollTop - st) <= delta)
-        return;
-    if (st > lastScrollTop && st > navbarHeight) {
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        if (st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    lastScrollTop = st;
-}
+const Navbar = () => {
+    const [show, setShow] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
+  
+    const controlNavbar = () => {
+      if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+        setShow(true); 
+      } else { // if scroll up show the navbar
+        setShow(false);  
+      }
+  
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY); 
+    };
+  
+    useEffect(() => {
+      window.addEventListener('scroll', controlNavbar);
+    
+      //cleanup function
+      return () => {
+         window.removeEventListener('scroll', controlNavbar);
+      };
+    }, [lastScrollY]);
+  
+    return (
+          <nav className={`active ${show && 'hidden'}`}>
+          <header className="justify-evenly grid grid-cols-9 w-10/12 text-center">
+                    <Link href="/" className="item col-start-1">WORK</Link>
+                    <Link href="/about" className="item col-start-5">ABOUT</Link>
+                    <Link href="/contact" className="item col-start-9">CONTACT</Link>
+                </header>
+          </nav>
+    );
+  };
 
 export default function RootLayout({
     children,
@@ -48,15 +56,10 @@ export default function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet" />
                 <link rel="stylesheet" href="/stylesheets/output.css" />
             </head>
-            <body>
-                <header className="justify-evenly grid grid-cols-9">
-                    <a href="/" className="item col-start-1">WORK</a>
-                    <a href="/about" className="item col-start-5">ABOUT</a>
-                    <a href="/contact" className="item col-start-9 pr-6">CONTACT</a>
-                </header>
+            <body className="w-10/12 mx-auto center-content">
+                <Navbar></Navbar>
                 <div>
-                    {/* <div className="px-14 py-12"> */}
-                    <a href="/">
+                    <Link href="/">
                         <svg className="pt-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 5442.52 566.93">
                             <style type="text/css">
 
@@ -104,7 +107,7 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                                 </path>
                             </g>
                         </svg>
-                    </a>
+                    </Link>
                 </div>
                 {children}
 

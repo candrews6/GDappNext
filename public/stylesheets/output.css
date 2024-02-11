@@ -544,16 +544,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.col-start-8 {
-  grid-column-start: 8;
-}
-
 .col-start-1 {
   grid-column-start: 1;
-}
-
-.col-start-4 {
-  grid-column-start: 4;
 }
 
 .col-start-5 {
@@ -564,20 +556,61 @@ video {
   grid-column-start: 9;
 }
 
-.col-end-8 {
-  grid-column-end: 8;
+.col-start-3 {
+  grid-column-start: 3;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.col-start-7 {
+  grid-column-start: 7;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
+.col-end-7 {
+  grid-column-end: 7;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
+.col-end-6 {
+  grid-column-end: 6;
+}
+
+.col-end-9 {
+  grid-column-end: 9;
+}
+
+.col-end-1 {
+  grid-column-end: 1;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .transform {
@@ -588,20 +621,16 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-8 {
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
 .grid-cols-9 {
   grid-template-columns: repeat(9, minmax(0, 1fr));
 }
 
-.justify-between {
-  justify-content: space-between;
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-evenly {
@@ -643,41 +672,8 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.pr-40 {
-  padding-right: 10rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .pt-6 {
@@ -686,6 +682,10 @@ video {
 
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -712,13 +712,13 @@ video {
 }
 
 .text {
-  width: 100%;
+  width: 50%;
 }
 
 /* Style the read more/less button */
 
 .toggle-button {
-  margin-left: 7px;
+  /* margin-left: 7px; */
   cursor: pointer;
 }
 
@@ -767,11 +767,11 @@ div img {
 
 header {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   height: auto;
-  justify-content: space-between;
+  /* justify-content: space-evenly; */
   text-align: center;
-  width: 100%;
+  width: 80%;
   z-index: 1;
   mix-blend-mode: difference;
   filter: invert(1);
@@ -780,9 +780,9 @@ header {
   transition: top 0.2s ease-in-out;
 }
 
-.nav-up {
+/* .nav-up {
   top: -40px;
-}
+} */
 
 #GDLogo {
   align-self: center;

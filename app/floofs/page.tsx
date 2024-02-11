@@ -16,27 +16,28 @@ const ExpandableText = ({ children, descriptionLength }) => {
     return (
         <div className='text'>
             {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
+            <pre>
             <span onClick={toggleText} className='toggle-button'>
-                {isExpanded ? 'Show less' : 'Show more'}
+                {isExpanded ? 'See less' : 'See more...'}
             </span>
+            </pre>
         </div>
     );
 };
 
 export default function Page() {
     return (
-        <div>
-            <div className="py-10 ml-10 px-4" style={{ display: "grid" }}>
+        <div className='px-14'>
+            <div className="py-10 px-4" style={{ display: "grid" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "auto auto" }} className="">
-                    <p className="text-left text-4xl pr-40" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>
-                    <p className="text-left text-2xl" style={{ width: "60%", fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
+                    <p className="text-left text-4xl" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>
+                    <p className="text-left text-2xl" style={{  fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
                     < h6 style={{ width: "50%" }}> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
-                <div className="grid grid-cols-1 gap-y-5 px-14 pt-20" contextMenu="false">
+                <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
                     <img loading="eager" src="images/001_all3_Header.jpg" alt="All 3 Header"></img>
-                    <h6 className="mb-20" style={{ width: "50%" }}></h6>
+                    <h6 className="" style={{ width: "50%" }}></h6>
                     <div>
-
                         <ExpandableText descriptionLength={282}>Floofs, a prominent dog grooming company, embarked on a quest to redefine its shampoo range’s packaging design. With each variant boasting a distinct scent, the challenge was to craft a design that not only differentiated each bottle but also infused them with unique personalities. The design approach ingeniously utilized customized prints, pairing specific dogs and colors to artfully represent the essence of each fragrance. This case study explores how Floofs collaborated with our design team to transform their shampoo packaging into an engaging and distinctive showcase of canine-inspired scents.</ExpandableText>
                     </div>
                     {/* <a href="#" @click = "truncate = false" x-show="truncate" x-on: click.prevent = "tab = 'view'" style = "font-weight:bold; font-size:14pt;">See more...</a>
