@@ -544,6 +544,30 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.col-start-8 {
+  grid-column-start: 8;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.col-start-5 {
+  grid-column-start: 5;
+}
+
+.col-start-9 {
+  grid-column-start: 9;
+}
+
+.col-end-8 {
+  grid-column-end: 8;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -562,6 +586,26 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-cols-9 {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-0 {
@@ -599,12 +643,45 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pr-40 {
   padding-right: 10rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -621,19 +698,10 @@ video {
   line-height: 2.5rem;
 }
 
-body {
-  /* background-color: aqua; */
-  font-weight: 900;
-}
-
-svg {
-  pointer-events: none;
-}
-
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(min-content, 1fr));
-}
+} */
 
 .item {
   width: 100%;
@@ -652,6 +720,82 @@ svg {
 .toggle-button {
   margin-left: 7px;
   cursor: pointer;
+}
+
+body {
+  padding-top: 50px;
+  font-family: 'Roboto Mono', monospace, "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px;
+  background-color: white;
+  transition: all .2s linear;
+}
+
+object {
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+h5 {
+  position: relative;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+table {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.scale {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  transition: all 0.4s;
+}
+
+div img {
+  aspect-ratio: 16 / 9;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  mix-blend-mode: difference;
+  filter: invert(1);
+  -webkit-filter: (invert(1));
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+  top: -40px;
+}
+
+#GDLogo {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  pointer-events: none;
+}
+
+span {
+  font-weight: bold;
+  font-size: x-large;
 }
 
 @media (min-width: 1024px) {

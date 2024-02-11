@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+// import $ from 'jquery';
 
 const ExpandableText = ({ children, descriptionLength }) => {
     const fullText = children;
@@ -31,7 +32,7 @@ export default function Page() {
                     <p className="text-left text-2xl" style={{ width: "60%", fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
                     < h6 style={{ width: "50%" }}> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
-                <div className="grid grid-cols-1 gap-0 px-14 gap-y-5 pt-20" contextMenu="return false">
+                <div className="grid grid-cols-1 gap-y-5 px-14 pt-20" contextMenu="false">
                     <img loading="eager" src="images/001_all3_Header.jpg" alt="All 3 Header"></img>
                     <h6 className="mb-20" style={{ width: "50%" }}></h6>
                     <div>
