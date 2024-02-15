@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"/_not-found":"/_not-found","/about/page":"/about","/contact/page":"/contact","/page":"/","/floofs/page":"/floofs"}
-=======
-{"/_not-found":"/_not-found","/floofs/page":"/floofs","/contact/page":"/contact","/about/page":"/about","/page":"/"}
->>>>>>> 672a6e4177052b18ff652242e35ae01f78689ed0
+{"/_not-found":"/_not-found","/contact/page":"/contact","/about/page":"/about","/floofs/page":"/floofs","/page":"/"}
