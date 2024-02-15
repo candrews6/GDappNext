@@ -1,4 +1,4 @@
-// File: C:\Users\666_b\Documents\Development\GDappNext\app\page.tsx
+// File: /Users/charlieandrews/Documents/Projects/GDappNext/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
