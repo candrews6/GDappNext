@@ -56,7 +56,7 @@ export default function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet" />
                 <link rel="stylesheet" href="/stylesheets/output.css" />
             </head>
-            <body className="w-screen lg:w-10/12 mx-auto center-content">
+            <body className="w-10/12 sm:w-screen mx-auto center-content">
                 <Navbar></Navbar>
                 <div>
                     <Link href="/">
