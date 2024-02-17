@@ -115,9 +115,8 @@ export default function RootLayout({
                 {/* <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="></script> */}
                 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"></link>
                 <link rel="stylesheet" href="/stylesheets/output.css" />
             </head>
             <body className="w-screen sm:w-10/12  mx-auto center-content">
