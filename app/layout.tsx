@@ -7,40 +7,102 @@ import "aos/dist/aos.css";
 import Script from 'next/script';
 
 const Navbar = () => {
-    // const [show, setShow] = useState(false);
-    // const [lastScrollY, setLastScrollY] = useState(0);
-
-    // const controlNavbar = () => {
-    //     if (window.scrollY >= lastScrollY) { // if scroll down hide the navbar
-    //         setShow(true);
-    //     } else { // if scroll up show the navbar
-    //         setShow(false);
-    //     }
-
-    //     // remember current page location to use in the next move
-    //     setLastScrollY(window.scrollY);
-    // };
-
-    // useEffect(() => {
-    //     window.addEventListener('scroll', controlNavbar);
-
-    //     //cleanup function
-    //     return () => {
-    //         window.removeEventListener('scroll', controlNavbar);
-    //     };
-    // }, [lastScrollY]);
+    const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
     return (
-        // <nav className={`active ${show && 'hidden'}`}>
-        <nav>
-            <header className="justify-evenly grid grid-cols-9 w-10/12 text-center top-12">
-                <Link href="/" className="item col-start-1 pl-4">WORK</Link>
-                <Link href="/about" className="item col-start-5">ABOUT</Link>
-                <Link href="/contact" className="item col-start-9 sm:pr-12">CONTACT</Link>
-            </header>
-        </nav>
+        <header className="">
+            <a href="/">
+            </a>
+            <nav className="w-screen">
+                <section className="MOBILE-MENU flex lg:hidden">
+                    <div
+                        className="HAMBURGER-ICON space-y-2"
+                        onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+                    >
+                        <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                        <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                        <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                    </div>
+
+                    <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+                        <div
+                            className="CROSS-ICON absolute top-0 right-0 px-15 py-15"
+                            onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
+                        >
+                            <svg
+                                className="h-8 w-8 text-gray-600"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] bg-gray-300">
+                            <li className="my-8">
+                                <Link href="/">WORK</Link>
+                            </li>
+                            <li className="my-8">
+                                <Link href="/about">ABOUT</Link>
+                            </li>
+                            <li className="my-8">
+                                <Link href="/contact">CONTACT</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <ul className="DESKTOP-MENU hidden sm:visible justify-evenly sm:grid grid-cols-9 w-10/12 text-center top-12">
+                    {/* <header className="hidden sm:visible justify-evenly sm:grid grid-cols-9 w-10/12 text-center top-12"> */}
+                    <Link href="/" className="item col-start-1 pl-5">WORK</Link>
+                    <Link href="/about" className="item col-start-5">ABOUT</Link>
+                    <Link href="/contact" className="item col-start-9 pr-12">CONTACT</Link>
+                    {/* </header> */}
+                </ul>
+            </nav>
+        </header>
     );
-};
+}
+
+// const Navbar = () => {
+//     // const [show, setShow] = useState(false);
+//     // const [lastScrollY, setLastScrollY] = useState(0);
+
+//     // const controlNavbar = () => {
+//     //     if (window.scrollY >= lastScrollY) { // if scroll down hide the navbar
+//     //         setShow(true);
+//     //     } else { // if scroll up show the navbar
+//     //         setShow(false);
+//     //     }
+
+//     //     // remember current page location to use in the next move
+//     //     setLastScrollY(window.scrollY);
+//     // };
+
+//     // useEffect(() => {
+//     //     window.addEventListener('scroll', controlNavbar);
+
+//     //     //cleanup function
+//     //     return () => {
+//     //         window.removeEventListener('scroll', controlNavbar);
+//     //     };
+//     // }, [lastScrollY]);
+
+//     return (
+//         // <nav className={`active ${show && 'hidden'}`}>
+//         <nav>
+//             <header className="justify-evenly grid grid-cols-9 w-10/12 text-center top-12">
+//                 <Link href="/" className="item col-start-1 pl-4">WORK</Link>
+//                 <Link href="/about" className="item col-start-5">ABOUT</Link>
+//                 <Link href="/contact" className="item col-start-9 sm:pr-12">CONTACT</Link>
+//             </header>
+//         </nav>
+//     );
+// };
 
 export default function RootLayout({
     children,
