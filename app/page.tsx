@@ -9,7 +9,7 @@ export default function Page() {
           <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
           <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex items-center justify-center transition-all duration-300 text-2xl opacity-0 group-hover:opacity-100">
             <strong className="relative transition-all duration-300 top-4 group-hover:top-0">
-              Here is some text!
+              FLOOFS
             </strong>
           </div>
         </figure>

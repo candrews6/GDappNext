@@ -544,40 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
@@ -588,6 +554,10 @@ video {
 
 .inset-0 {
   inset: 0px;
+}
+
+.top-12 {
+  top: 3rem;
 }
 
 .top-4 {
@@ -706,10 +676,6 @@ video {
   padding-left: 1rem;
 }
 
-.pr-12 {
-  padding-right: 3rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
@@ -755,31 +721,21 @@ video {
   transition-duration: 300ms;
 }
 
-/* .grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
-} */
-
 .item {
   width: 100%;
-  /* padding: 0 1rem; */
-  /* justify-content: space-evenly; */
   text-align: center;
-  /* border: 1px dashed #000; */
 }
 
 .text {
   width: 50%;
 }
 
-/* Style the read more/less button */
-
 .toggle-button {
-  /* margin-left: 7px; */
   cursor: pointer;
 }
 
 body {
+  height: 100vh;
   padding-top: 50px;
   font-family: 'Roboto Mono', monospace, "Lucida Grande", Helvetica, Arial, sans-serif;
   font: 14px;
@@ -823,10 +779,9 @@ div img {
 }
 
 header {
+  height: 100vh;
   display: flex;
-  /* flex-direction: row; */
   height: auto;
-  /* justify-content: space-evenly; */
   text-align: center;
   width: 80%;
   z-index: 1;
@@ -836,10 +791,6 @@ header {
   position: fixed;
   transition: top 0.2s ease-in-out;
 }
-
-/* .nav-up {
-  top: -40px;
-} */
 
 #GDLogo {
   align-self: center;
@@ -864,12 +815,12 @@ span {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-screen {
-    width: 100vw;
-  }
-
   .sm\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .sm\:pr-12 {
+    padding-right: 3rem;
   }
 }
 
