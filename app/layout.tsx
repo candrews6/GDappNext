@@ -121,6 +121,23 @@ export default function RootLayout({
             </head>
             <body className="w-screen sm:w-10/12  mx-auto center-content">
                 <Navbar></Navbar>
+
+                <div className="container">
+                    <h1>Click The Menu</h1>
+                    <p>Be Amazed</p>
+                    {/* <!-- Everything below this is part of the menu--> */}
+                </div>
+                <div className="button_container" id="toggle"><span className="top"></span><span className="middle"></span><span className="bottom"></span></div>
+                <div className="overlay" id="overlay">
+                    <nav className="overlay-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div>
                     <Link href="/">
                         <svg className="pt-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 5442.52 566.93">
@@ -176,6 +193,12 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
 
                 <script>
                     AOS.init();
+                </script>
+                <script>
+                    $('#toggle').click(function () {
+                        $(this).toggleClass('active');
+                    $('#overlay').toggleClass('open');
+                    });
                 </script>
                 <Script src="scripts/script.js" />
 

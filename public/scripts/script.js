@@ -1,3 +1,5 @@
+// import $ from "jquery";
+
 var didScroll = false;
 
 window.addEventListener('scroll', function () {
@@ -37,3 +39,4 @@ function scrolled() {
 //         prevScrollpos = currentScrollPos;
 //     }
 // });
+
