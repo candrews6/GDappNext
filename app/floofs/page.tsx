@@ -27,7 +27,7 @@ const ExpandableText = ({ children, descriptionLength }) => {
 
 export default function Page() {
     return (
-        <div className='px-14'>
+        <div className='px-5 sm:px-14'>
             <div className="py-10" style={{ display: "grid" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "auto auto" }} className="">
                     <p className="text-left text-4xl" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>

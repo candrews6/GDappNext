@@ -5,68 +5,123 @@ import $ from "jquery";
 // import AOS from 'aos';
 import "aos/dist/aos.css";
 import Script from 'next/script';
+import {slide as Menu} from 'react-burger-menu';
 
-const Navbar = () => {
-    const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+const Test = () => (
+		<div className="max-w-full h-12 flex justify-start items-center bg-black mb-4 text-white rounded-md ">
+			<div className="flex md:hidden">
+				<HamburgerMenu />
+			</div>
+			<div className="hidden md:flex">
+				<Links />
+			</div>
+		</div>
+	);
 
-    return (
-        <header className="">
-            <a href="/">
-            </a>
-            <nav className="w-screen">
-                <section className="MOBILE-MENU flex lg:hidden">
-                    <div
-                        className="HAMBURGER-ICON space-y-2"
-                        onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
-                    >
-                        <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                        <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                        <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                    </div>
 
-                    <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-                        <div
-                            className="CROSS-ICON absolute top-0 right-0 px-15 py-15"
-                            onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
-                        >
-                            <svg
-                                className="h-8 w-8 text-gray-600"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <line x1="18" y1="6" x2="6" y2="18" />
-                                <line x1="6" y1="6" x2="18" y2="18" />
-                            </svg>
-                        </div>
-                        <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] bg-gray-300">
-                            <li className="my-8">
-                                <Link href="/">WORK</Link>
-                            </li>
-                            <li className="my-8">
-                                <Link href="/about">ABOUT</Link>
-                            </li>
-                            <li className="my-8">
-                                <Link href="/contact">CONTACT</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+const HamburgerMenu = () => (
+	<div className="relative p-2">
+		<Menu
+			customBurgerIcon={<HamburgerIcon />}
+			width={'auto'}
+			className="left-0 top-12"
+		>
+			<Links />
+		</Menu>
+	</div>
+);
 
-                <ul className="DESKTOP-MENU hidden sm:visible justify-evenly sm:grid grid-cols-9 w-10/12 text-center top-12">
-                    {/* <header className="hidden sm:visible justify-evenly sm:grid grid-cols-9 w-10/12 text-center top-12"> */}
-                    <Link href="/" className="item col-start-1 pl-5">WORK</Link>
-                    <Link href="/about" className="item col-start-5">ABOUT</Link>
-                    <Link href="/contact" className="item col-start-9 pr-12">CONTACT</Link>
-                    {/* </header> */}
-                </ul>
-            </nav>
-        </header>
-    );
-}
+const HamburgerIcon = () => (
+	<div className="p-1/2">
+		<svg
+			className="w-8 h-8 text-gray-500"
+			fill="none"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth="2"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+		>
+			<path d="M4 6h16M4 12h16M4 18h16"></path>
+		</svg>
+	</div>
+);
+
+export const Links = () => (
+	<>
+		<Link href="/">
+			<p className="font-bold p-4">Home</p>
+		</Link>
+		<Link href="/about">
+			<p className="font-bold p-4">About</p>
+		</Link>
+	</>
+);
+
+
+// import BurgerMenu from 'burger';
+
+// const Navbar = () => {
+//     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+
+//     return (
+//         <header className="">
+//             <a href="/">
+//             </a>
+//             <nav className="w-screen">
+//                 <section className="MOBILE-MENU flex lg:hidden">
+//                     <div
+//                         className="HAMBURGER-ICON space-y-2"
+//                         onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+//                         >
+//                         <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
+//                         <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
+//                         <span className="block mx-8 h-0.5 w-8 animate-pulse bg-gray-600"></span>
+//                     </div>
+
+//                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+//                         <div
+//                             className="CROSS-ICON absolute top-0 right-0 px-13 py-15"
+//                             onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
+//                         >
+//                             <svg
+//                                 className="h-8 w-8 text-gray-600"
+//                                 viewBox="0 0 24 24"
+//                                 fill="none"
+//                                 stroke="currentColor"
+//                                 strokeWidth="2"
+//                                 strokeLinecap="round"
+//                                 strokeLinejoin="round"
+//                             >
+//                                 <line x1="18" y1="6" x2="6" y2="18" />
+//                                 <line x1="6" y1="6" x2="18" y2="18" />
+//                             </svg>
+//                         </div>
+//                         <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] bg-gray-300">
+//                             <li className="my-8">
+//                                 <Link href="/">WORK</Link>
+//                             </li>
+//                             <li className="my-8">
+//                                 <Link href="/about">ABOUT</Link>
+//                             </li>
+//                             <li className="my-8">
+//                                 <Link href="/contact">CONTACT</Link>
+//                             </li>
+//                         </ul>
+//                     </div>
+//                 </section>
+
+//                 <ul className="DESKTOP-MENU hidden sm:visible justify-evenly sm:grid grid-cols-9 w-10/12 text-center top-12">
+//                     {/* <header className="hidden sm:visible justify-evenly sm:grid grid-cols-9 w-10/12 text-center top-12"> */}
+//                     <Link href="/" className="item col-start-1 pl-5">WORK</Link>
+//                     <Link href="/about" className="item col-start-5">ABOUT</Link>
+//                     <Link href="/contact" className="item col-start-9 pr-12">CONTACT</Link>
+//                     {/* </header> */}
+//                 </ul>
+//             </nav>
+//         </header>
+//     );
+// }
 
 // const Navbar = () => {
 //     // const [show, setShow] = useState(false);
@@ -120,14 +175,18 @@ export default function RootLayout({
                 <link rel="stylesheet" href="/stylesheets/output.css" />
             </head>
             <body className="w-screen sm:w-10/12  mx-auto center-content">
-                <Navbar></Navbar>
+                {/* <Navbar></Navbar> */}
 
-                <div className="container">
-                    <h1>Click The Menu</h1>
-                    <p>Be Amazed</p>
-                    {/* <!-- Everything below this is part of the menu--> */}
-                </div>
-                <div className="button_container" id="toggle"><span className="top"></span><span className="middle"></span><span className="bottom"></span></div>
+                <Test></Test>
+                <nav>
+                    <header className="justify-evenly grid grid-cols-9 sm:w-10/12 text-center top-12">
+                        <Link href="/" className="item col-start-1 pl-5 sm:pr-11">WORK</Link>
+                        <Link href="/about" className="item col-start-5 px-5">ABOUT</Link>
+                        <Link href="/contact" className="item col-start-9 sm:pl-11 pr-12">CONTACT</Link>
+                    </header>
+                </nav>
+
+                {/* <div className="button_container mx-3 visible sm:hidden" id="toggle"><span className="top"></span><span className="middle"></span><span className="bottom"></span></div>
                 <div className="overlay" id="overlay">
                     <nav className="overlay-menu">
                         <ul>
@@ -137,7 +196,7 @@ export default function RootLayout({
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
-                </div>
+                </div> */}
                 <div>
                     <Link href="/">
                         <svg className="pt-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 5442.52 566.93">
@@ -195,12 +254,13 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                     AOS.init();
                 </script>
                 <script>
-                    $('#toggle').click(function () {
+                    {/* const toggle = element.addEventListener('#toggle').click(function () {
                         $(this).toggleClass('active');
-                    $('#overlay').toggleClass('open');
-                    });
+                    element.classList('#overlay').toggleClass('open');
+                    }); */}
                 </script>
-                <Script src="scripts/script.js" />
+                <Script src="script/burger.js" />
+                {/* <Script src="scripts/script.js" /> */}
 
             </body>
         </html >

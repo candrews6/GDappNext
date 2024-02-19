@@ -17,7 +17,7 @@ setInterval(function () {
 var lastScrollTop = 0;
 
 function scrolled() {
-    var scrollStatus = window.pageYOffset;
+    var scrollStatus = window.scrollY;
 
     if (scrollStatus < lastScrollTop) {
         document.querySelectorAll("header")[0].style.top = "3rem";
