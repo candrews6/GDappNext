@@ -7,12 +7,12 @@ import "aos/dist/aos.css";
 import Script from 'next/script';
 import {slide as Menu} from 'react-burger-menu';
 
-const Test = () => (
-		<div className="max-w-full h-12 flex justify-start items-center bg-black mb-4 text-white rounded-md ">
-			<div className="flex md:hidden">
+const Navbar = () => (
+		<div className="max-w-full h-12 flex justify-start items-center mb-4 text-white rounded-md ">
+			<div className="flex sm:hidden">
 				<HamburgerMenu />
 			</div>
-			<div className="hidden md:flex">
+			<div className="sm:flex">
 				<Links />
 			</div>
 		</div>
@@ -49,12 +49,13 @@ const HamburgerIcon = () => (
 
 export const Links = () => (
 	<>
-		<Link href="/">
-			<p className="font-bold p-4">Home</p>
-		</Link>
-		<Link href="/about">
-			<p className="font-bold p-4">About</p>
-		</Link>
+		{/* <nav>
+                    <header className="justify-evenly sm:grid grid-cols-9 sm:w-10/12 text-center top-12"> */}
+                        <Link href="/" className="item sm:col-start-1 sm:pl-5 sm:pr-11">WORK</Link>
+                        <Link href="/about" className="item col-start-5 px-5">ABOUT</Link>
+                        <Link href="/contact" className="item col-start-9 sm:pl-9">CONTACT</Link>
+                    {/* </header>
+                </nav> */}
 	</>
 );
 
@@ -177,14 +178,13 @@ export default function RootLayout({
             <body className="w-screen sm:w-10/12  mx-auto center-content">
                 {/* <Navbar></Navbar> */}
 
-                <Test></Test>
                 <nav>
-                    <header className="justify-evenly grid grid-cols-9 sm:w-10/12 text-center top-12">
-                        <Link href="/" className="item col-start-1 pl-5 sm:pr-11">WORK</Link>
-                        <Link href="/about" className="item col-start-5 px-5">ABOUT</Link>
-                        <Link href="/contact" className="item col-start-9 sm:pl-11 pr-12">CONTACT</Link>
-                    </header>
+                <header className="hidden sm:visible justify-evenly sm:grid grid-cols-9 sm:w-10/12 text-center top-12">
+                <Links></Links>
+                </header>
                 </nav>
+                <Navbar></Navbar>
+                
 
                 {/* <div className="button_container mx-3 visible sm:hidden" id="toggle"><span className="top"></span><span className="middle"></span><span className="bottom"></span></div>
                 <div className="overlay" id="overlay">
@@ -259,7 +259,7 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                     element.classList('#overlay').toggleClass('open');
                     }); */}
                 </script>
-                <Script src="script/burger.js" />
+                {/* <Script src="script/burger.js" /> */}
                 {/* <Script src="scripts/script.js" /> */}
 
             </body>

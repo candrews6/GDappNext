@@ -21,10 +21,10 @@ export default function Page() {
       <img data-aos="fade-up" src="images/alt3.png" alt='test2'></img>
       <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
-              Test
+              
             </strong>
             <p className="text-2xl font-thin">
-              Test Product
+               
             </p>
           </div>
       </figure>
