@@ -47,7 +47,7 @@ const HamburgerIcon = () => (
 	</div>
 );
 
-export const Links = () => (
+const Links = () => (
 	<>
 		{/* <nav>
                     <header className="justify-evenly sm:grid grid-cols-9 sm:w-10/12 text-center top-12"> */}
