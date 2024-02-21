@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Page() {
   {/* button(onclick="myFunction()" id="myBtn")="Read more" */ }
   return (<div>
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 px-5 sm:px-14 py-10" contextMenu="return false">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 px-5 sm:px-14 py-10 z-0 pointer-events-none" contextMenu="return false">
       <Link href="/floofs">
         <figure className="inline-block overflow-hidden relative group">
           <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>

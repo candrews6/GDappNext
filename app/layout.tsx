@@ -5,55 +5,15 @@ import $ from "jquery";
 // import AOS from 'aos';
 import "aos/dist/aos.css";
 import Script from 'next/script';
-import { slide as Menu } from 'react-burger-menu';
-
-const Navbar = () => (
-    <div className="max-w-full h-12 flex justify-end items-center mb-4 text-white rounded-md ">
-        <div className="flex sm:hidden">
-            <HamburgerMenu />
-        </div>
-        <div className="sm:flex">
-            <Links />
-        </div>
-    </div>
-);
-
-
-const HamburgerMenu = () => (
-    <div className="relative p-2">
-        <Menu right
-            customBurgerIcon={<HamburgerIcon />}
-            width={'100%'}
-            className="right-0 top-0"
-        >
-            <Links />
-        </Menu>
-    </div>
-);
-
-const HamburgerIcon = () => (
-    <div className="p-1/2">
-        <svg
-            className="w-8 h-8 text-gray-500"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-        >
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-    </div>
-);
+// import { pushRotate as Menu } from 'react-burger-menu';
 
 const Links = () => (
     <>
         {/* <nav>
                     <header className="justify-evenly sm:grid grid-cols-9 sm:w-10/12 text-center top-12"> */}
         <Link href="/" className="item sm:col-start-1 sm:pl-5 sm:pr-11">WORK</Link>
-        <Link href="/about" className="item col-start-5 px-5">ABOUT</Link>
-        <Link href="/contact" className="item col-start-9 sm:pl-9">CONTACT</Link>
+        <Link href="/about" className="item col-start-5 sm:px-5">ABOUT</Link>
+        <Link href="/contact" className="item col-start-9 sm:pr-1">CONTACT</Link>
         {/* </header>
                 </nav> */}
     </>
@@ -82,7 +42,25 @@ export default function RootLayout({
                         <Links></Links>
                     </header>
                 </nav>
-                <Navbar></Navbar>
+                <div id="menuArea" className="sm:hidden  z-[5000]">
+                    <input type="checkbox" id="menuToggle"></input>
+
+                    <label htmlFor="menuToggle" className="menuOpen">
+                        <div className="open"></div>
+                    </label>
+
+                    <div className="menu menuEffects">
+                        <label htmlFor="menuToggle"></label>
+                        <div className="menuContent">
+                            <ul>
+                                <li><Link href="/">WORK</Link></li>
+                                <li><Link href="/about">ABOUT</Link></li>
+                                <li><Link href="/contact">CONTACT</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {/* <Navbar></Navbar> */}
 
 
                 {/* <div className="button_container mx-3 visible sm:hidden" id="toggle"><span className="top"></span><span className="middle"></span><span className="bottom"></span></div>
