@@ -26,17 +26,3 @@ function scrolled() {
     }
     lastScrollTop = scrollStatus;
 }
-
-// var prevScrollpos = window.scrollY;
-// window.addEventListener('scroll', function () {
-//     {
-//         var currentScrollPos = window.scrollY;
-//         if (prevScrollpos >= currentScrollPos) {
-//             document.querySelectorAll("header")[0].style.top = "3rem";
-//         } else {
-//             document.querySelectorAll("header")[0].style.top = "-5rem";
-//         }
-//         prevScrollpos = currentScrollPos;
-//     }
-// });
-
