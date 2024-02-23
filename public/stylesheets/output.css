@@ -840,7 +840,8 @@ input {
   border-radius: 2px;
   cursor: pointer;
   position: relative;
-  top: 8px;
+  top: -40px;
+  left: -50px;
 }
 
 .open:before {
@@ -900,10 +901,10 @@ input {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 40px;
+  top: 0px;
   background-size: 100%;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .menu .menuContent {
@@ -926,7 +927,7 @@ input {
   color: black;
   text-decoration: none;
   transition: color 0.2s;
-  font-family: Trebuchet MS;
+  /* font-family: Trebuchet MS; */
   text-transform: uppercase;
   padding: 10px 0;
 }
@@ -976,9 +977,10 @@ input {
 
 #menuToggle:checked ~ .menuOpen .open:after {
   content: "";
-  background-color: white;
+  background-color: black;
   transform: rotate(-45deg);
   position: relative;
+  pointer-events: inherit;
   top: 0;
   right: 0;
   z-index: 1;

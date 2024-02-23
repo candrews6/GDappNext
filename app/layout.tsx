@@ -42,7 +42,7 @@ export default function RootLayout({
                         <Links></Links>
                     </header>
                 </nav>
-                <div id="menuArea" className="sm:hidden  z-[5000]">
+                <div id="menuArea" className="sm:hidden z-[5000]">
                     <input type="checkbox" id="menuToggle"></input>
 
                     <label htmlFor="menuToggle" className="menuOpen">
