@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 // import $ from 'jquery';
+import Link from 'next/link';
 
 const ExpandableText = ({ children, descriptionLength }) => {
     const fullText = children;

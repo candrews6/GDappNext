@@ -7,6 +7,11 @@ import "aos/dist/aos.css";
 import Script from 'next/script';
 // import { pushRotate as Menu } from 'react-burger-menu';
 
+function NavBar(){
+
+    const [show, setShow] = useState(false);
+}
+
 const Links = () => (
     <>
         {/* <nav>
@@ -53,9 +58,9 @@ export default function RootLayout({
                         <label htmlFor="menuToggle"></label>
                         <div className="menuContent">
                             <ul>
-                                <li><Link href="/">WORK</Link></li>
-                                <li><Link href="/about">ABOUT</Link></li>
-                                <li><Link href="/contact">CONTACT</Link></li>
+                                <li><Link href="/" onClick={() => setShow(!show)}>WORK</Link></li>
+                                <li><Link href="/about" onClick={() => onToggle(!show)}>ABOUT</Link></li>
+                                <li><Link href="/contact" onClick={() => onToggle(!show)}>CONTACT</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -126,6 +131,62 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                     </Link>
                 </div>
                 {children}
+                <div className="grid grid-cols-2 gap-10 px-5 py-10 z-0 pointer-events-none" contextMenu="return false">
+                    <hr className="solid gap-5"></hr>
+                    <Link href="/toxicknobs">
+                        <div>
+                            <figure className="inline-block overflow-hidden relative group">
+                                <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                                <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
+                                    <p className="text-2xl font-thin">
+                                        Packaging design
+                                    </p>
+                                    <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
+                                        Toxic knobs
+                                    </strong>
+                                </div>
+                            </figure>
+                            <p className="text-2xl font-thin">
+                                Packaging design
+                            </p>
+                            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
+                                Toxic Knobs
+                            </strong>
+                        </div>
+                    </Link>
+
+                    <Link href="/darienzo">
+                        <div>
+                            <figure className="inline-block overflow-hidden relative group">
+                                <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                                {/* <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100"></div> */}
+                                <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
+                                    <p className="text-2xl font-thin">
+                                        Packaging design / Gift Box Design
+                                    </p>
+                                    <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
+                                        Dairenzo
+                                    </strong>
+                                </div>
+                            </figure>
+                            <p className="text-2xl font-thin">
+                                Packaging design / Gift Box Design
+                            </p>
+                            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
+                                Dairenzo
+                            </strong>
+                        </div>
+                    </Link>
+                </div>
+
+                <footer className="w-screen sm:w-10/12 text-center grid grid-cols-3">
+                    <img className="grid-start" src="images/copyright_Bottom-01.svg" alt="" />
+                    <img className="grid-middle" src="images/email_Icon-01.svg" alt="" />
+                    <Link className="grid-end" href="https://www.linkedin.com" >
+                        <img src="images/Linkedin_Icon-01.svg" alt="" />
+                    </Link>
+
+                </footer>
 
                 <script>
                     AOS.init();
