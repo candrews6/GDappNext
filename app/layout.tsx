@@ -145,19 +145,12 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                 </div>
                 {children}
                 <hr className="solid gap-5"></hr>
-                <div className="grid grid-cols-2 gap-10 px-5 py-10 z-0 pointer-events-none" contextMenu="return false">
+                <div className='w-screen sm:w-10/12 px-5 sm:px-14 '>
+                <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
                     <Link href="/toxicknobs">
                         <div>
                             <figure className="inline-block overflow-hidden relative group">
                                 <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
-                                <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
-                                    <p className="text-2xl font-thin">
-                                        Packaging design
-                                    </p>
-                                    <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
-                                        Toxic knobs
-                                    </strong>
-                                </div>
                             </figure>
                             <p className="text-2xl font-thin">
                                 Packaging design
@@ -168,19 +161,10 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                         </div>
                     </Link>
 
-                    <Link href="/darienzo" scroll={true}>
-                        <div>
+                    <Link href="/darienzo">
+                        <div className=''>
                             <figure className="inline-block overflow-hidden relative group">
                                 <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
-                                {/* <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100"></div> */}
-                                <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
-                                    <p className="text-2xl font-thin">
-                                        Packaging design / Gift Box Design
-                                    </p>
-                                    <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
-                                        Darienzo
-                                    </strong>
-                                </div>
                             </figure>
                             <p className="text-2xl font-thin">
                                 Packaging design / Gift Box Design
@@ -200,6 +184,7 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                     </Link>
 
                 </footer>
+                </div>
 
                 <script>
                     AOS.init();
