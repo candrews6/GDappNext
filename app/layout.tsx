@@ -7,10 +7,23 @@ import "aos/dist/aos.css";
 import Script from 'next/script';
 // import { pushRotate as Menu } from 'react-burger-menu';
 
-function NavBar(){
+// const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+// const handleCloseMenu = () => {
+//     setIsMenuOpen(false);
+// };
+// const handleStateChange = (state) => {
+//     setIsMenuOpen(state.isOpen);
+// };
 
-    const [show, setShow] = useState(false);
-}
+// const NavBar = () => (
+//     <Menu isOpen={isMenuOpen} onStateChange={handleStateChange}>
+//         ... Link 1
+//         <button onClick={() => handleCloseMenu} />
+//         ....
+//     </Menu>
+// );
+
+
 
 const Links = () => (
     <>
@@ -58,9 +71,9 @@ export default function RootLayout({
                         <label htmlFor="menuToggle"></label>
                         <div className="menuContent">
                             <ul>
-                                <li><Link href="/" onClick={() => setShow(!show)}>WORK</Link></li>
-                                <li><Link href="/about" onClick={() => onToggle(!show)}>ABOUT</Link></li>
-                                <li><Link href="/contact" onClick={() => onToggle(!show)}>CONTACT</Link></li>
+                                <li><Link href="/">WORK</Link></li>
+                                <li><Link href="/about">ABOUT</Link></li>
+                                <li><Link href="/contact">CONTACT</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -131,8 +144,8 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                     </Link>
                 </div>
                 {children}
+                <hr className="solid gap-5"></hr>
                 <div className="grid grid-cols-2 gap-10 px-5 py-10 z-0 pointer-events-none" contextMenu="return false">
-                    <hr className="solid gap-5"></hr>
                     <Link href="/toxicknobs">
                         <div>
                             <figure className="inline-block overflow-hidden relative group">
@@ -155,7 +168,7 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                         </div>
                     </Link>
 
-                    <Link href="/darienzo">
+                    <Link href="/darienzo" scroll={true}>
                         <div>
                             <figure className="inline-block overflow-hidden relative group">
                                 <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
@@ -165,7 +178,7 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                                         Packaging design / Gift Box Design
                                     </p>
                                     <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
-                                        Dairenzo
+                                        Darienzo
                                     </strong>
                                 </div>
                             </figure>
@@ -173,16 +186,16 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                                 Packaging design / Gift Box Design
                             </p>
                             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
-                                Dairenzo
+                                Darienzo
                             </strong>
                         </div>
                     </Link>
                 </div>
 
                 <footer className="w-screen sm:w-10/12 text-center grid grid-cols-3">
-                    <img className="grid-start" src="images/copyright_Bottom-01.svg" alt="" />
-                    <img className="grid-middle" src="images/email_Icon-01.svg" alt="" />
-                    <Link className="grid-end" href="https://www.linkedin.com" >
+                    <img className="grid-start w-10/12" src="images/copyright_Bottom-01.svg" alt="" />
+                    <img className="grid-end w-2/12" src="images/email_Icon-01.svg" alt="" />
+                    <Link className="grid-end w-2/12" href="https://www.linkedin.com" >
                         <img src="images/Linkedin_Icon-01.svg" alt="" />
                     </Link>
 
