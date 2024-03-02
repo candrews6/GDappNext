@@ -80,7 +80,7 @@ export default function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"></link>
                 <link rel="stylesheet" href="/stylesheets/output.css" />
             </head>
-            <body className="w-screen sm:w-10/12  mx-auto center-content">
+            <body className="w-screen sm:w-10/12 mx-auto center-content">
                 {/* <Navbar></Navbar> */}
 
                 <nav>
@@ -179,13 +179,15 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
 
 
                     <footer className="w-screen sm:w-10/12 text-center grid grid-cols-3">
-                        <img className="grid-start w-10/12" src="images/copyright_Bottom-01.svg" alt="" />
-                        <Link className="grid-end w-2/12" href="mailto:charlie.andrews6@mail.com" >
-                            <img src="images/email_Icon-01.svg" alt="" />
-                        </Link >
-                        <Link className="grid-end w-2/12" href="https://www.linkedin.com" >
-                            <img src="images/Linkedin_Icon-01.svg" alt="" />
-                        </Link>
+                        <img className="grid-start w-full h-10" src="images/copyright_Bottom-01.svg" alt="" />
+                        <div className='grid-end content-end text-center w-4/12'>
+                            <Link className="grid-end" href="mailto:baineuk@gmail.com" >
+                                <img src="images/email_Icon-01.svg" alt="" />
+                            </Link >
+                            <Link className="grid-end" href="https://www.linkedin.com/in/grant-davies-11685518b/" >
+                                <img src="images/Linkedin_Icon-01.svg" alt="" />
+                            </Link>
+                        </div>
 
                     </footer>
                 </div>
