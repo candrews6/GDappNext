@@ -5,7 +5,10 @@ import $ from "jquery";
 // import AOS from 'aos';
 import "aos/dist/aos.css";
 import Script from 'next/script';
+
 // import { pushRotate as Menu } from 'react-burger-menu';
+
+// const MenuToggle = () => (
 
 // const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 // const handleCloseMenu = () => {
@@ -14,24 +17,49 @@ import Script from 'next/script';
 // const handleStateChange = (state) => {
 //     setIsMenuOpen(state.isOpen);
 // };
-
-// const NavBar = () => (
-//     <Menu isOpen={isMenuOpen} onStateChange={handleStateChange}>
-//         ... Link 1
-//         <button onClick={() => handleCloseMenu} />
-//         ....
-//     </Menu>
 // );
 
+const Navbar = () => {
+
+    const [showNav, setShowNav] = useState(true);
+
+
+    const Burger = () => (
+        <>
+            {showNav && <div className="w-48 bg-gray-200 h-screen py-10">
+                {/* <button className="bg-primary w-32 h-12 rounded-lg text-white" onClick={() => setShowNav(false)}>Close Navbar</button>        */}
+                <div id="menuArea" className="sm:hidden z-[5000]">
+                    <input type="checkbox" id="menuToggle" onClick={() => setShowNav(false)}></input>
+
+                    <label htmlFor="menuToggle" className="menuOpen">
+                        <div className="open"></div>
+                    </label>
+
+                    <div className="menu menuEffects">
+                        <label htmlFor="menuToggle"></label>
+                        <div className="menuContent">
+                            <ul>
+                                <li id="menuToggle" onClick={() => setShowNav(false)}><Link href="/">WORK</Link></li>
+                                <li><Link href="/about">ABOUT</Link></li>
+                                <li><Link href="/contact">CONTACT</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </>
+    );
+};
 
 
 const Links = () => (
     <>
         {/* <nav>
                     <header className="justify-evenly sm:grid grid-cols-9 sm:w-10/12 text-center top-12"> */}
-        <Link href="/" className="item sm:col-start-1 sm:pl-5 sm:pr-11">WORK</Link>
+        <Link href="/" className="item sm:col-start-1 sm:pl-5 sm:pr-11 md:pr-1">WORK</Link>
         <Link href="/about" className="item col-start-5 sm:px-5">ABOUT</Link>
-        <Link href="/contact" className="item col-start-9 sm:pr-1">CONTACT</Link>
+        <Link href="/contact" className="item col-start-9 sm:pr-1 md:pr-11">CONTACT</Link>
         {/* </header>
                 </nav> */}
     </>
@@ -60,6 +88,9 @@ export default function RootLayout({
                         <Links></Links>
                     </header>
                 </nav>
+
+                <Navbar />
+
                 <div id="menuArea" className="sm:hidden z-[5000]">
                     <input type="checkbox" id="menuToggle"></input>
 
@@ -92,7 +123,7 @@ export default function RootLayout({
                         </ul>
                     </nav>
                 </div> */}
-                <div>
+                <div className=''>
                     <Link href="/">
                         <svg className="pt-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 5442.52 566.93">
                             <style type="text/css">
@@ -144,60 +175,25 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                     </Link>
                 </div>
                 {children}
-                <hr className="solid gap-5"></hr>
-                <div className='w-screen sm:w-10/12 px-5 sm:px-14 '>
-                <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
-                    <Link href="/toxicknobs">
-                        <div>
-                            <figure className="inline-block overflow-hidden relative group">
-                                <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
-                            </figure>
-                            <p className="text-2xl font-thin">
-                                Packaging design
-                            </p>
-                            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
-                                Toxic Knobs
-                            </strong>
-                        </div>
-                    </Link>
+                <div className='w-screen sm:w-10/12 px-5 sm:px-14'>
 
-                    <Link href="/darienzo">
-                        <div className=''>
-                            <figure className="inline-block overflow-hidden relative group">
-                                <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
-                            </figure>
-                            <p className="text-2xl font-thin">
-                                Packaging design / Gift Box Design
-                            </p>
-                            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
-                                Darienzo
-                            </strong>
-                        </div>
-                    </Link>
+
+                    <footer className="w-screen sm:w-10/12 text-center grid grid-cols-3">
+                        <img className="grid-start w-10/12" src="images/copyright_Bottom-01.svg" alt="" />
+                        <Link className="grid-end w-2/12" href="mailto:charlie.andrews6@mail.com" >
+                            <img src="images/email_Icon-01.svg" alt="" />
+                        </Link >
+                        <Link className="grid-end w-2/12" href="https://www.linkedin.com" >
+                            <img src="images/Linkedin_Icon-01.svg" alt="" />
+                        </Link>
+
+                    </footer>
                 </div>
-
-                <footer className="w-screen sm:w-10/12 text-center grid grid-cols-3">
-                    <img className="grid-start w-10/12" src="images/copyright_Bottom-01.svg" alt="" />
-                    <img className="grid-end w-2/12" src="images/email_Icon-01.svg" alt="" />
-                    <Link className="grid-end w-2/12" href="https://www.linkedin.com" >
-                        <img src="images/Linkedin_Icon-01.svg" alt="" />
-                    </Link>
-
-                </footer>
-                </div>
-
+                <Script src="/scripts/script.js">
+                </Script>
                 <script>
                     AOS.init();
                 </script>
-                <script>
-                    {/* const toggle = element.addEventListener('#toggle').click(function () {
-                        $(this).toggleClass('active');
-                    element.classList('#overlay').toggleClass('open');
-                    }); */}
-                </script>
-                {/* <Script src="script/burger.js" /> */}
-                {/* <Script src="scripts/script.js" /> */}
-
             </body>
         </html >
     );

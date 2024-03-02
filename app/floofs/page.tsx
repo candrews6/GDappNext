@@ -63,7 +63,41 @@ export default function Page() {
                     <img loading="lazy" src="images/floofshoodie.jpg" alt="floofs hoodie"></img>
                     <img loading="lazy" src="images/013_bottles.jpg" alt="bottles"></img>
                 </div>
+
+
+            </div>
+            <hr className="solid gap-5"></hr>
+
+            <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
+                <Link href="/toxicknobs">
+                    <div>
+                        <figure className="inline-block overflow-hidden relative group">
+                            <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                        </figure>
+                        <p className="text-2xl font-thin">
+                            Packaging design
+                        </p>
+                        <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
+                            Toxic Knobs
+                        </strong>
+                    </div>
+                </Link>
+
+                <Link href="/darienzo">
+                    <div className=''>
+                        <figure className="inline-block overflow-hidden relative group">
+                            <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                        </figure>
+                        <p className="text-2xl font-thin">
+                            Packaging design / Gift Box Design
+                        </p>
+                        <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
+                            Darienzo
+                        </strong>
+                    </div>
+                </Link>
             </div>
         </div >
+
     );
 }
