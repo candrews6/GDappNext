@@ -72,7 +72,7 @@ export default function Page() {
                 <Link href="/toxicknobs">
                     <div>
                         <figure className="inline-block overflow-hidden relative group">
-                            <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                            <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
                         </figure>
                         <p className="text-2xl font-thin">
                             Packaging design
@@ -86,7 +86,7 @@ export default function Page() {
                 <Link href="/darienzo">
                     <div className=''>
                         <figure className="inline-block overflow-hidden relative group">
-                            <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                            <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
                         </figure>
                         <p className="text-2xl font-thin">
                             Packaging design / Gift Box Design

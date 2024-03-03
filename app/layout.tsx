@@ -6,65 +6,6 @@ import $ from "jquery";
 import "aos/dist/aos.css";
 import Script from 'next/script';
 
-// import { pushRotate as Menu } from 'react-burger-menu';
-
-// const MenuToggle = () => (
-
-// const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-// const handleCloseMenu = () => {
-//     setIsMenuOpen(false);
-// };
-// const handleStateChange = (state) => {
-//     setIsMenuOpen(state.isOpen);
-// };
-// );
-
-const Navbar = () => {
-
-    const [showNav, setShowNav] = useState(true);
-
-
-    const Burger = () => (
-        <>
-            {showNav && <div className="w-48 bg-gray-200 h-screen py-10">
-                {/* <button className="bg-primary w-32 h-12 rounded-lg text-white" onClick={() => setShowNav(false)}>Close Navbar</button>        */}
-                <div id="menuArea" className="sm:hidden z-[5000]">
-                    <input type="checkbox" id="menuToggle" onClick={() => setShowNav(false)}></input>
-
-                    <label htmlFor="menuToggle" className="menuOpen">
-                        <div className="open"></div>
-                    </label>
-
-                    <div className="menu menuEffects">
-                        <label htmlFor="menuToggle"></label>
-                        <div className="menuContent">
-                            <ul>
-                                <li id="menuToggle" onClick={() => setShowNav(false)}><Link href="/">WORK</Link></li>
-                                <li><Link href="/about">ABOUT</Link></li>
-                                <li><Link href="/contact">CONTACT</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            }
-        </>
-    );
-};
-
-
-const Links = () => (
-    <>
-        {/* <nav>
-                    <header className="justify-evenly sm:grid grid-cols-9 sm:w-10/12 text-center top-12"> */}
-        <Link href="/" className="item sm:col-start-1 sm:pl-5 sm:pr-11 md:pr-1">WORK</Link>
-        <Link href="/about" className="item col-start-5 sm:px-5">ABOUT</Link>
-        <Link href="/contact" className="item col-start-9 sm:pr-1 md:pr-11">CONTACT</Link>
-        {/* </header>
-                </nav> */}
-    </>
-);
-
 export default function RootLayout({
     children,
 }: {
@@ -81,48 +22,6 @@ export default function RootLayout({
                 <link rel="stylesheet" href="/stylesheets/output.css" />
             </head>
             <body className="w-screen sm:w-10/12 mx-auto center-content">
-                {/* <Navbar></Navbar> */}
-
-                <nav>
-                    <header className="hidden sm:visible justify-evenly sm:grid grid-cols-9 sm:w-10/12 text-center top-12">
-                        <Links></Links>
-                    </header>
-                </nav>
-
-                {/* <Navbar /> */}
-
-                <div id="menuArea" className="sm:hidden z-[5000]">
-                    <input type="checkbox" id="menuToggle"></input>
-
-                    <label htmlFor="menuToggle" className="menuOpen">
-                        <div className="open"></div>
-                    </label>
-
-                    <div className="menu menuEffects">
-                        <label htmlFor="menuToggle"></label>
-                        <div className="menuContent">
-                            <ul>
-                                <li><Link href="/">WORK</Link></li>
-                                <li><Link href="/about">ABOUT</Link></li>
-                                <li><Link href="/contact">CONTACT</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                {/* <Navbar></Navbar> */}
-
-
-                {/* <div className="button_container mx-3 visible sm:hidden" id="toggle"><span className="top"></span><span className="middle"></span><span className="bottom"></span></div>
-                <div className="overlay" id="overlay">
-                    <nav className="overlay-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div> */}
                 <div className=''>
                     <Link href="/">
                         <svg className="pt-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 5442.52 566.93">
@@ -175,24 +74,23 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                     </Link>
                 </div>
                 {children}
-                <div className='w-screen sm:w-10/12 px-5 sm:px-14'>
+                {/* <div className='w-screen sm:w-10/12 px-5 sm:px-14'> */}
+                <footer className="'w-full grid grid-cols-8 px-4 sm:px-14">
+                    <img className="grid-start col-span-2 w-full" src="images/copyright_Bottom-01.svg" alt="" />
+                    <div className='col-start-7 w-full text-right justify-self-end'>
+                        <Link className="" href="https://www.linkedin.com/in/grant-davies-11685518b/" >
+                            <img src="images/Linkedin_Icon-01.svg" alt="" />
+                        </Link>
+                    </div>
+                    <div className='col-start-8 w-full text-right justify-self-end'>
+                        <Link className="" href="mailto:baineuk@gmail.com" >
+                            <img src="images/email_Icon-01.svg" alt="" />
+                        </Link>
+                    </div>
 
+                </footer>
+                {/* </div> */}
 
-                    <footer className="w-screen sm:w-10/12 text-center grid grid-cols-3">
-                        <img className="grid-start w-full h-10" src="images/copyright_Bottom-01.svg" alt="" />
-                        <div className='grid-end content-end text-center w-4/12'>
-                            <Link className="grid-end" href="mailto:baineuk@gmail.com" >
-                                <img src="images/email_Icon-01.svg" alt="" />
-                            </Link >
-                            <Link className="grid-end" href="https://www.linkedin.com/in/grant-davies-11685518b/" >
-                                <img src="images/Linkedin_Icon-01.svg" alt="" />
-                            </Link>
-                        </div>
-
-                    </footer>
-                </div>
-                <Script src="/scripts/script.js">
-                </Script>
                 <script>
                     AOS.init();
                 </script>
