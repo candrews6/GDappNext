@@ -66,18 +66,16 @@ export default function Page() {
 
 
             </div>
-            <hr className="solid gap-5"></hr>
+            <hr style={{ color: "black", height: "2px", border: "1px solid black" }} className="solid gap-5"></hr>
 
             <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
                 <Link href="/toxicknobs">
                     <div>
-                        <figure className="inline-block overflow-hidden relative group">
-                            <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
-                        </figure>
+                        <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>
-                        <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
+                        <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
                             Toxic Knobs
                         </strong>
                     </div>
@@ -85,13 +83,11 @@ export default function Page() {
 
                 <Link href="/darienzo">
                     <div className=''>
-                        <figure className="inline-block overflow-hidden relative group">
-                            <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
-                        </figure>
+                        <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design / Gift Box Design
                         </p>
-                        <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
+                        <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
                             Darienzo
                         </strong>
                     </div>
