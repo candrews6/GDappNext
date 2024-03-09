@@ -66,7 +66,7 @@ export default function Page() {
 
 
             </div>
-            <hr style={{ color: "black", height: "1px", border: "1px solid" }} className="gap-5 border-slate-600 text-slate-600"></hr>
+            <hr style={{ height: "1px", border: "1px solid" }} className="gap-5 border-slate-400 text-slate-400"></hr>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
                 <Link href="/toxicknobs">
