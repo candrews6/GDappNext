@@ -17,7 +17,7 @@ export default function Page() {
           </div>
         </figure>
       </Link>
-      <figure className="inline-block overflow-hidden relative group">
+      {/* <figure className="inline-block overflow-hidden relative group"> */}
         <img data-aos="fade-up" src="images/alt3.png" alt='test2'></img>
         <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
           <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
@@ -25,7 +25,7 @@ export default function Page() {
           <p className="text-2xl font-thin">
           </p>
         </div>
-      </figure>
+      {/* </figure> */}
       <figure className="inline-block overflow-hidden relative group">
         <img data-aos="fade-up" src="images/alt3.png" alt="test3"></img>
       </figure>

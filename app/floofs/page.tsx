@@ -33,11 +33,11 @@ export default function Page() {
                 <div style={{ display: "grid", gridTemplateColumns: "auto auto" }} className="">
                     <p className="text-left text-4xl" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>
                     <p className="text-left text-2xl" style={{ fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
-                    < h6 style={{ width: "50%" }}> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
+                    < h6 className='w-full sm:w-1/2'> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
                     <img loading="eager" src="images/001_all3_Header.jpg" alt="All 3 Header"></img>
-                    <h6 className="" style={{ width: "50%" }}></h6>
+                    <h6 className="w-full sm:w-1/2"></h6>
                     <div>
                         <ExpandableText descriptionLength={282}>Floofs, a prominent dog grooming company, embarked on a quest to redefine its shampoo range’s packaging design. With each variant boasting a distinct scent, the challenge was to craft a design that not only differentiated each bottle but also infused them with unique personalities. The design approach ingeniously utilized customized prints, pairing specific dogs and colors to artfully represent the essence of each fragrance. This case study explores how Floofs collaborated with our design team to transform their shampoo packaging into an engaging and distinctive showcase of canine-inspired scents.</ExpandableText>
                     </div>
@@ -66,9 +66,9 @@ export default function Page() {
 
 
             </div>
-            <hr style={{ color: "black", height: "2px", border: "1px solid black" }} className="solid gap-5"></hr>
+            <hr style={{ color: "black", height: "1px", border: "1px solid" }} className="gap-5 border-slate-600 text-slate-600"></hr>
 
-            <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
                 <Link href="/toxicknobs">
                     <div>
                         <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
