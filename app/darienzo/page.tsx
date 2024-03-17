@@ -39,7 +39,7 @@ export default function Page() {
                     <ExpandableText descriptionLength={282}>
                     </ExpandableText>
                 </div>
-                <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
+                <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/darienzo/001_3up.jpg" alt="3up darienzo"></img>
                     <img loading="eager" src="images/darienzo/003_D_Stands.jpg" alt="d stands"></img>
                     <img loading="lazy" src="images/darienzo/004_front_open.jpg" alt="front open"></img>

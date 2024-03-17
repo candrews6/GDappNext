@@ -47,7 +47,7 @@ export default function Page() {
 
                     </ExpandableText>
                 </div>
-                <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
+                <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/001_all3_Header.jpg" alt="All 3 Header"></img>
                     {/* <h6 className="" style={{ width: "50%" }}></h6> */}
                     {/* <a href="#" @click = "truncate = false" x-show="truncate" x-on: click.prevent = "tab = 'view'" style = "font-weight:bold; font-size:14pt;">See more...</a>

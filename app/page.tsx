@@ -35,7 +35,7 @@ export default function Page() {
           <img data-aos="fade-up" src="images/blabs/B_labs_homeimage.jpg" alt="test4"></img>
           <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
-              B-Labs
+              B.LABS
             </strong>
             <p className="text-2xl font-thin">
               Packaging Design

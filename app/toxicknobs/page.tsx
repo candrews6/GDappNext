@@ -35,20 +35,20 @@ export default function Page() {
                     <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} >Packaging design for Toxic Knobs Gear Knob</p>
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'>Packaging Design</h6 >
                 </div>
-                <div className='my-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
+                <div className='mt-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <ExpandableText descriptionLength={282}>
                     </ExpandableText>
                 </div>
-                <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
+                <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/Toxic knobs/001_3x_front 2.jpg" alt="3 up"></img>
                     <img loading="eager" src="images/Toxic knobs/002_Pose_black.jpg" alt="Pose Black"></img>
                     <img loading="lazy" src="images/Toxic knobs/003_4up_Black.jpg" alt="4 up black"></img>
 
-                    <img loading="lazy" src="images/Toxic knobs/4up_Red.jpg" alt="4 up red"></img>
+                    <img loading="lazy" src="images/Toxic knobs/006_Close_up_twist_2.jpg" alt="Close up twist"></img>
                     <video className="lazy" autoPlay muted loop playsInline>
                         <source src="images/Toxic knobs/005_openclose.mp4" type='video/mp4'></source>
                     </video>
-                    <img loading="lazy" src="images/Toxic knobs/006_Close_up_twist_2.jpg" alt="Close up twist"></img>
+                    <img loading="lazy" src="images/Toxic knobs/4up_Red.jpg" alt="4 up red"></img>
                     <img loading="lazy" src="images/Toxic knobs/007_Close_up_open.jpg" alt="Close up open"></img>
                     <img loading="lazy" src="images/Toxic knobs/008_close_tk.jpg" alt="Close tall knob"></img>
                     <img loading="lazy" src="images/Toxic knobs/009_red.jpg" alt="Red"></img>

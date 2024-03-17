@@ -31,11 +31,11 @@ export default function Page() {
         <div className='px-5 sm:px-14'>
             <div className="py-10" style={{ display: "grid" }}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 py-2 sm:py-0">
-                    <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>B-labs</p>
-                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} >Branding and packaging design for B-labs Glassware</p>
+                    <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>B.labs</p>
+                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} >Branding and packaging design for B.labs Glassware</p>
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'> Branding, packaging design</h6 >
                 </div>
-                <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
+                <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/blabs/001_Group.jpg" alt="Group"></img>
                     <img loading="eager" src="images/blabs/002_Front Angled.jpg" alt="Front Angled"></img>
                     <img loading="lazy" src="images/blabs/003_Close1.jpg" alt="Close 1"></img>
