@@ -39,7 +39,7 @@ export default function Page() {
                 <div style={{ display: "grid", gridTemplateColumns: "auto auto" }} className="">
                     <p className="text-left text-4xl" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>
                     <p className="text-left text-2xl" style={{ fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
-                    < h6 style={{ width: "50%" }}> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
+                    < h6 className='w-full sm:w-1/2'> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
                 <div className='my-4'>
                     <ExpandableText descriptionLength={282}>
@@ -77,9 +77,9 @@ export default function Page() {
 
 
             </div>
-            <hr style={{ color: "black", height: "2px", border: "1px solid black" }} className="solid gap-5"></hr>
+            <hr style={{ height: "1px", border: "1px solid" }} className="gap-5 border-slate-400 text-slate-400"></hr>
 
-            <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
                 <Link href="/toxicknobs">
                     <div>
                         <img data-aos="fade-up" className="image" src="images/Toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
