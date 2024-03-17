@@ -10,28 +10,28 @@ import Link from 'next/link';
 //     subsets: ['latin'],
 // })
 
-const ExpandableText = ({ descriptionLength }) => {
-    const fullText = 'The challenge was to create a versatile packaging solution for dog shampoo, with each variant featuring a distinct scent. To keep production costs down I designed a bottle shape that would suit multiple dog illustrations of recognisable dog breeds, paired with colours to capture the essence and personality of each fragrance. \n\nThrough a blend of colour, typography, and illustration, I aimed to create a vibrant and playful appearance that extended the brand’s identity, making it appealing to consumers and easily recognisable on the shelves.';
+// const ExpandableText = ({ descriptionLength }) => {
+//     const fullText = 'The challenge was to create a versatile packaging solution for dog shampoo, with each variant featuring a distinct scent. To keep production costs down I designed a bottle shape that would suit multiple dog illustrations of recognisable dog breeds, paired with colours to capture the essence and personality of each fragrance. \n\nThrough a blend of colour, typography, and illustration, I aimed to create a vibrant and playful appearance that extended the brand’s identity, making it appealing to consumers and easily recognisable on the shelves.';
 
-    // Set the initial state of the text to be collapsed
-    const [isExpanded, setIsExpanded] = useState(false);
+//     // Set the initial state of the text to be collapsed
+//     const [isExpanded, setIsExpanded] = useState(false);
 
-    // This function is called when the read more/less button is clicked
-    const toggleText = () => {
-        setIsExpanded(!isExpanded);
-    };
+//     // This function is called when the read more/less button is clicked
+//     const toggleText = () => {
+//         setIsExpanded(!isExpanded);
+//     };
 
-    return (
-        <div className='text w-full sm:w-1/2'>
-            {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
-            <pre>
-                <span onClick={toggleText} className='toggle-button'>
-                    {isExpanded ? 'See less' : 'See more...'}
-                </span>
-            </pre>
-        </div>
-    );
-};
+//     return (
+//         <div className='text w-full sm:w-1/2'>
+//             {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
+//             <pre>
+//                 <span onClick={toggleText} className='toggle-button'>
+//                     {isExpanded ? 'See less' : 'See more...'}
+//                 </span>
+//             </pre>
+//         </div>
+//     );
+// };
 
 export default function Page() {
     return (
@@ -43,9 +43,12 @@ export default function Page() {
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 text-gray-500'> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
                 <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
-                    <ExpandableText descriptionLength={282}>
-
-                    </ExpandableText>
+                    <div className='text w-full sm:w-1/2'>
+                        The challenge was to create a versatile packaging solution for dog shampoo, with each variant featuring a distinct scent. To keep production costs down I designed a bottle shape that would suit multiple dog illustrations of recognisable dog breeds, paired with colours to capture the essence and personality of each fragrance.
+                        <br />
+                        <br />
+                        Through a blend of colour, typography, and illustration, I aimed to create a vibrant and playful appearance that extended the brand’s identity, making it appealing to consumers and easily recognisable on the shelves.
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/001_all3_Header.jpg" alt="All 3 Header"></img>

@@ -3,29 +3,6 @@ import { useState } from 'react';
 // import $ from 'jquery';
 import Link from 'next/link';
 
-const ExpandableText = ({ descriptionLength }) => {
-    const fullText = 'I wanted to create memorable and quirky packaging for a range of cosmetic skin care products. Starting with branding and a strong visual identity I then translated it into bold, recognisable bottles and a bag style outer packaging to create a skin care kit.\n\nThe outer packaging needed to not only stand out but be sustainable. Opting for a 10mm thick board, made from Post consumer kraft that is fully recyclable and repulpable.';
-
-    // Set the initial state of the text to be collapsed
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    // This function is called when the read more/less button is clicked
-    const toggleText = () => {
-        setIsExpanded(!isExpanded);
-    };
-
-    return (
-        <div className='text w-full sm:w-1/2'>
-            {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
-            <pre>
-                <span onClick={toggleText} className='toggle-button'>
-                    {isExpanded ? 'See less' : 'See more...'}
-                </span>
-            </pre>
-        </div>
-    );
-};
-
 export default function Page() {
     return (
         <div className='px-5 sm:px-14'>
@@ -36,8 +13,12 @@ export default function Page() {
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'> Branding, packaging design</h6 >
                 </div>
                 <div className='my-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
-                    <ExpandableText descriptionLength={282}>
-                    </ExpandableText>
+                    <div className='text w-full sm:w-1/2'>
+                        I wanted to create memorable and quirky packaging for a range of cosmetic skin care products. Starting with branding and a strong visual identity I then translated it into bold, recognisable bottles and a bag style outer packaging to create a skin care kit.
+                        <br />
+                        <br />
+                        The outer packaging needed to not only stand out but be sustainable. Opting for a 10mm thick board, made from Post consumer kraft that is fully recyclable and repulpable.
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/darienzo/001_3up.jpg" alt="3up darienzo"></img>

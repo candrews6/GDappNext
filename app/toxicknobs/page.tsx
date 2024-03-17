@@ -3,29 +3,6 @@ import { useState } from 'react';
 // import $ from 'jquery';
 import Link from 'next/link';
 
-const ExpandableText = ({ descriptionLength }) => {
-    const fullText = 'Independent gear knob manufacturer Toxic Knobs, were looking for a eco friendly packaging to house their hand crafted, recycled gear knobs.\n\nEach gear knob is hand made using ground down and reformed plastic bottles, To carry on the ethos of the product the packaging was made Using 100% recyclable card.\n\nIncorporating the new branding into the design, I opted for tube packaging. this worked well in keeping it recyclable, but almost mirrored the brands visual identity. Designing the tube to have the feel of a science capsule,';
-
-    // Set the initial state of the text to be collapsed
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    // This function is called when the read more/less button is clicked
-    const toggleText = () => {
-        setIsExpanded(!isExpanded);
-    };
-
-    return (
-        <div className='text w-full sm:w-1/2'>
-            {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
-            <pre>
-                <span onClick={toggleText} className='toggle-button'>
-                    {isExpanded ? 'See less' : 'See more...'}
-                </span>
-            </pre>
-        </div>
-    );
-};
-
 export default function Page() {
     return (
         <div className='px-5 sm:px-14'>
@@ -36,8 +13,13 @@ export default function Page() {
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'>Packaging Design</h6 >
                 </div>
                 <div className='mt-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
-                    <ExpandableText descriptionLength={282}>
-                    </ExpandableText>
+                    <div className='text w-full sm:w-1/2'>
+                        Independent gear knob manufacturer Toxic Knobs, were looking for a eco friendly packaging to house their hand crafted, recycled gear knobs.
+                        Each gear knob is hand made using ground down and reformed plastic bottles, To carry on the ethos of the product the packaging was made Using 100% recyclable card.
+                        <br />
+                        <br />
+                        Incorporating the new branding into the design, I opted for tube packaging. this worked well in keeping it recyclable, but almost mirrored the brands visual identity. Designing the tube to have the feel of a science capsule.
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/Toxic knobs/001_3x_front 2.jpg" alt="3 up"></img>

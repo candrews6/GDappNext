@@ -3,29 +3,6 @@ import { useState } from 'react';
 // import $ from 'jquery';
 import Link from 'next/link';
 
-const ExpandableText = ({ descriptionLength }) => {
-    const fullText = '';
-
-    // Set the initial state of the text to be collapsed
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    // This function is called when the read more/less button is clicked
-    const toggleText = () => {
-        setIsExpanded(!isExpanded);
-    };
-
-    return (
-        <div className='text w-full sm:w-1/2'>
-            {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
-            <pre>
-                <span onClick={toggleText} className='toggle-button'>
-                    {isExpanded ? 'See less' : 'See more...'}
-                </span>
-            </pre>
-        </div>
-    );
-};
-
 export default function Page() {
     return (
         <div className='px-5 sm:px-14'>
