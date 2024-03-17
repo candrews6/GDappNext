@@ -3,8 +3,8 @@ import { useState } from 'react';
 // import $ from 'jquery';
 import Link from 'next/link';
 
-const ExpandableText = ({ children, descriptionLength }) => {
-    const fullText = children;
+const ExpandableText = ({ descriptionLength }) => {
+    const fullText = 'I wanted to create memorable and quirky packaging for a range of cosmetic skin care products. Starting with branding and a strong visual identity I then translated it into bold, recognisable bottles and a bag style outer packaging to create a skin care kit.\n\nThe outer packaging needed to not only stand out but be sustainable. Opting for a 10mm thick board, made from Post consumer kraft that is fully recyclable and repulpable.';
 
     // Set the initial state of the text to be collapsed
     const [isExpanded, setIsExpanded] = useState(false);
@@ -15,7 +15,7 @@ const ExpandableText = ({ children, descriptionLength }) => {
     };
 
     return (
-        <div className='text'>
+        <div className='text w-full sm:w-1/2'>
             {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
             <pre>
                 <span onClick={toggleText} className='toggle-button'>
@@ -30,18 +30,13 @@ export default function Page() {
     return (
         <div className='px-5 sm:px-14'>
             <div className="py-10" style={{ display: "grid" }}>
-                <div style={{ display: "grid", gridTemplateColumns: "auto auto" }} className="">
-                    <p className="text-left text-4xl" style={{ fontWeight: "bold" }}>Darienzo - packaging design</p>
-                    <p className="text-left text-2xl" style={{ fontWeight: "bold" }} >Branding, bottle and skin care kit packaging</p>
-                    < h6 style={{ width: "50%" }}> Branding, packaging design</h6 >
+                <div className="grid grid-cols-1 sm:grid-cols-2 py-2 sm:py-0">
+                    <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>Darienzo - Packaging design</p>
+                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} >Branding, bottle and skin care kit packaging</p>
+                    <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'> Branding, packaging design</h6 >
                 </div>
-                <div className='my-4'>
-                    <ExpandableText descriptionLength={282}>I wanted to create memorable and quirky packaging for a range of cosmetic skin care products. Starting with branding and a strong visual identity I then translated it into bold, recognisable bottles and a bag style outer packaging to create a skin care kit.
-                        <p style={{ whiteSpace: 'pre-wrap' }}>{'\u000A'}The outer packaging needed to not only stand out but be sustainable. Opting for a 10mm thick board, made from Post consumer kraft that is fully recyclable and repulpable.
-                            {/* <span style={{ whiteSpace: 'pre-wrap' }}>
-                                {'\u000A \u000A'}
-                            </span> */}
-                        </p>
+                <div className='my-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
+                    <ExpandableText descriptionLength={282}>
                     </ExpandableText>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
@@ -60,9 +55,9 @@ export default function Page() {
 
 
             </div>
-            <hr style={{ color: "black", height: "2px", border: "1px solid black" }} className="solid gap-5"></hr>
+            <hr style={{ height: "1px", border: "1px solid" }} className="gap-5 border-slate-400 text-slate-400"></hr>
 
-            <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
                 <Link href="/floofs">
                     <div>
                         <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>

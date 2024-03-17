@@ -7,10 +7,6 @@
   text-align: center;
 }
 
-.text {
-  width: 50%;
-}
-
 .toggle-button {
   cursor: pointer;
 }
@@ -255,4 +251,8 @@ input {
 
 #menuToggle:not(:checked)~.menuEffects ul {
   transform: translateY(-30%);
+}
+
+.display-linebreak {
+  white-space: pre-line;
 }

@@ -2,15 +2,16 @@
 import { useState } from 'react';
 // import $ from 'jquery';
 import Link from 'next/link';
-import { Inter, Roboto_Mono, Roboto } from 'next/font/google'
+// import { Inter, Roboto_Mono, Roboto } from 'next/font/google'
 
-const roboto = Roboto({
-    weight: '400',
-    subsets: ['latin'],
-})
 
-const ExpandableText = ({ children, descriptionLength }) => {
-    const fullText = children;
+// const roboto = Roboto({
+//     weight: '400',
+//     subsets: ['latin'],
+// })
+
+const ExpandableText = ({ descriptionLength }) => {
+    const fullText = 'The challenge was to create a versatile packaging solution for dog shampoo, with each variant featuring a distinct scent. To keep production costs down I designed a bottle shape that would suit multiple dog illustrations of recognisable dog breeds, paired with colours to capture the essence and personality of each fragrance. \n\nThrough a blend of colour, typography, and illustration, I aimed to create a vibrant and playful appearance that extended the brand’s identity, making it appealing to consumers and easily recognisable on the shelves.';
 
     // Set the initial state of the text to be collapsed
     const [isExpanded, setIsExpanded] = useState(false);
@@ -21,7 +22,7 @@ const ExpandableText = ({ children, descriptionLength }) => {
     };
 
     return (
-        <div className='text'>
+        <div className='text w-full sm:w-1/2'>
             {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}..`}
             <pre>
                 <span onClick={toggleText} className='toggle-button'>
@@ -36,17 +37,14 @@ export default function Page() {
     return (
         <div className='px-5 sm:px-14'>
             <div className="py-10" style={{ display: "grid" }}>
-                <div style={{ display: "grid", gridTemplateColumns: "auto auto" }} className="">
-                    <p className="text-left text-4xl" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>
-                    <p className="text-left text-2xl" style={{ fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
-                    < h6 className='w-full sm:w-1/2'> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
+                <div className="grid grid-cols-1 sm:grid-cols-2">
+                    <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>
+                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
+                    <h6 className='w-full sm:w-1/2 py-2 sm:py-0 text-gray-500'> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
-                <div className='my-4'>
+                <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <ExpandableText descriptionLength={282}>
-                        The challenge was to create a versatile packaging solution for dog shampoo, with each variant featuring a distinct scent. To keep production costs down I designed a bottle shape that would suit multiple dog illustrations of recognisable dog breeds, paired with colours to capture the essence and personality of each fragrance.
-                        <p className={roboto.className} style={{ whiteSpace: 'pre-wrap' }}>{'\u000A'}
-                            Through a blend of colour, typography, and illustration, I aimed to create a vibrant and playful appearance that extended the brand’s identity, making it appealing to consumers and easily recognisable on the shelves.
-                        </p>
+
                     </ExpandableText>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
