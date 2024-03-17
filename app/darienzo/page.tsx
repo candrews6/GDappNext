@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
-import Link from 'next/link';
 // import $ from 'jquery';
+import Link from 'next/link';
 
 const ExpandableText = ({ children, descriptionLength }) => {
     const fullText = children;
@@ -31,16 +31,63 @@ export default function Page() {
         <div className='px-5 sm:px-14'>
             <div className="py-10" style={{ display: "grid" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "auto auto" }} className="">
-                    
+                    <p className="text-left text-4xl" style={{ fontWeight: "bold" }}>Darienzo - packaging design</p>
+                    <p className="text-left text-2xl" style={{ fontWeight: "bold" }} >Branding, bottle and skin care kit packaging</p>
+                    < h6 style={{ width: "50%" }}> Branding, packaging design</h6 >
+                </div>
+                <div className='my-4'>
+                    <ExpandableText descriptionLength={282}>I wanted to create memorable and quirky packaging for a range of cosmetic skin care products. Starting with branding and a strong visual identity I then translated it into bold, recognisable bottles and a bag style outer packaging to create a skin care kit.
+                        <p style={{ whiteSpace: 'pre-wrap' }}>{'\u000A'}The outer packaging needed to not only stand out but be sustainable. Opting for a 10mm thick board, made from Post consumer kraft that is fully recyclable and repulpable.
+                            {/* <span style={{ whiteSpace: 'pre-wrap' }}>
+                                {'\u000A \u000A'}
+                            </span> */}
+                        </p>
+                    </ExpandableText>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
-                    <h6 className="" style={{ width: "50%" }}></h6>
-                    
-                    {/* <a href="#" @click = "truncate = false" x-show="truncate" x-on: click.prevent = "tab = 'view'" style = "font-weight:bold; font-size:14pt;">See more...</a>
-                    <a x-show="!truncate" href="#" @click = "truncate = true" x-on: click.prevent = "tab = 'view'" style = "font-weight:bold; font-size:14pt;">See less</a> */}
-                    
+                    <img loading="eager" src="images/darienzo/001_3up.jpg" alt="3up darienzo"></img>
+                    <img loading="eager" src="images/darienzo/003_D_Stands.jpg" alt="d stands"></img>
+                    <img loading="lazy" src="images/darienzo/004_front_open.jpg" alt="front open"></img>
+
+                    <img loading="lazy" src="images/darienzo/005_D_ISO.jpg" alt="d iso"></img>
+
+                    <img loading="lazy" src="images/darienzo/006_D_Flat.jpg" alt="d flat"></img>
+                    <img loading="lazy" src="images/darienzo/007_bagstreet.jpg" alt="bag street"></img>
+                    <img loading="lazy" src="images/darienzo/008_D_Stack.jpg" alt="d stack"></img>
+                    <img loading="lazy" src="images/darienzo/009front_back.jpg" alt="front back"></img>
+
                 </div>
+
+
+            </div>
+            <hr style={{ color: "black", height: "2px", border: "1px solid black" }} className="solid gap-5"></hr>
+
+            <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
+                <Link href="/floofs">
+                    <div>
+                        <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                        <p className="text-2xl font-thin">
+                            Packaging design
+                        </p>
+                        <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
+                            Floofs
+                        </strong>
+                    </div>
+                </Link>
+
+                <Link href="/blabs">
+                    <div className=''>
+                        <img data-aos="fade-up" className="image" src="images/blabs/B_labs_homeimage.jpg" alt='Header image'></img>
+                        <p className="text-2xl font-thin">
+                            Packaging design
+                        </p>
+                        <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
+                            B-Labs
+                        </strong>
+                    </div>
+                </Link>
             </div>
         </div >
+
     );
 }

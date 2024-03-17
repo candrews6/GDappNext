@@ -18,7 +18,7 @@
 body {
   height: 100vh;
   padding-top: 50px;
-  font-family: 'Roboto Mono', monospace, "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Mono", monospace, sans-serif, "Lucida Grande", Helvetica, Arial;
   font: 14px;
   background-color: white;
   transition: all .2s linear;
@@ -92,6 +92,7 @@ header {
 span {
   font-weight: bold;
   font-size: large;
+  font-family: "Roboto", sans-serif, monospace, "Lucida Grande", Helvetica, Arial;
 }
 
 input {

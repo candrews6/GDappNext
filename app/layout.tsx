@@ -6,6 +6,24 @@ import $ from "jquery";
 import "aos/dist/aos.css";
 import Script from 'next/script';
 
+import { Inter, Roboto_Mono, Roboto } from 'next/font/google'
+
+export const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+})
+
+export const roboto_mono = Roboto_Mono({
+    subsets: ['latin'],
+    display: 'swap',
+})
+
+export const roboto = Roboto({
+    weight: '400',
+    subsets: ['latin'],
+})
+
+
 export default function RootLayout({
     children,
 }: {
@@ -18,7 +36,8 @@ export default function RootLayout({
                 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
                 <link rel="stylesheet" href="/stylesheets/output.css" />
             </head>
             <body className="w-screen sm:w-10/12 mx-auto center-content">

@@ -2,6 +2,12 @@
 import { useState } from 'react';
 // import $ from 'jquery';
 import Link from 'next/link';
+import { Inter, Roboto_Mono, Roboto } from 'next/font/google'
+
+const roboto = Roboto({
+    weight: '400',
+    subsets: ['latin'],
+})
 
 const ExpandableText = ({ children, descriptionLength }) => {
     const fullText = children;
@@ -35,12 +41,17 @@ export default function Page() {
                     <p className="text-left text-2xl" style={{ fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
                     < h6 style={{ width: "50%" }}> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
+                <div className='my-4'>
+                    <ExpandableText descriptionLength={282}>
+                        The challenge was to create a versatile packaging solution for dog shampoo, with each variant featuring a distinct scent. To keep production costs down I designed a bottle shape that would suit multiple dog illustrations of recognisable dog breeds, paired with colours to capture the essence and personality of each fragrance.
+                        <p className={roboto.className} style={{ whiteSpace: 'pre-wrap' }}>{'\u000A'}
+                            Through a blend of colour, typography, and illustration, I aimed to create a vibrant and playful appearance that extended the brand’s identity, making it appealing to consumers and easily recognisable on the shelves.
+                        </p>
+                    </ExpandableText>
+                </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-20" contextMenu="false">
                     <img loading="eager" src="images/001_all3_Header.jpg" alt="All 3 Header"></img>
-                    <h6 className="" style={{ width: "50%" }}></h6>
-                    <div>
-                        <ExpandableText descriptionLength={282}>Floofs, a prominent dog grooming company, embarked on a quest to redefine its shampoo range’s packaging design. With each variant boasting a distinct scent, the challenge was to craft a design that not only differentiated each bottle but also infused them with unique personalities. The design approach ingeniously utilized customized prints, pairing specific dogs and colors to artfully represent the essence of each fragrance. This case study explores how Floofs collaborated with our design team to transform their shampoo packaging into an engaging and distinctive showcase of canine-inspired scents.</ExpandableText>
-                    </div>
+                    {/* <h6 className="" style={{ width: "50%" }}></h6> */}
                     {/* <a href="#" @click = "truncate = false" x-show="truncate" x-on: click.prevent = "tab = 'view'" style = "font-weight:bold; font-size:14pt;">See more...</a>
                     <a x-show="!truncate" href="#" @click = "truncate = true" x-on: click.prevent = "tab = 'view'" style = "font-weight:bold; font-size:14pt;">See less</a> */}
                     <img loading="eager" src="images/002_Sketch.jpg" alt="Sketch"></img>
@@ -71,7 +82,7 @@ export default function Page() {
             <div className="grid grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
                 <Link href="/toxicknobs">
                     <div>
-                        <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/Toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>
@@ -83,7 +94,7 @@ export default function Page() {
 
                 <Link href="/darienzo">
                     <div className=''>
-                        <img data-aos="fade-up" className="image" src="images/alt3.png" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/darienzo/008_D_Stack.jpg" alt='darienzo stack image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design / Gift Box Design
                         </p>
