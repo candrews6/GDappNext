@@ -95,7 +95,7 @@ export default function Page() {
 
                 <Link href="/darienzo">
                     <div className=''>
-                        <img data-aos="fade-up" className="image" src="images/darienzo/008_D_Stack.jpg" alt='darienzo stack image'></img>
+                        <img data-aos="fade-up" className="image" src="images/darienzo/Home page image.jpg" alt='darienzo stack image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design / Gift Box Design
                         </p>

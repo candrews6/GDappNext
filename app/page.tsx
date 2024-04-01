@@ -12,7 +12,7 @@ export default function Page() {
               FLOOFS
             </strong>
             <p className="text-2xl font-thin">
-              Packaging Design
+              Branding,packaging design
             </p>
           </div>
         </Link>
@@ -24,8 +24,8 @@ export default function Page() {
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0">
               DARIENZO
             </strong>
-            <p className="text-2xl font-thin">
-              Packaging Design
+            <p className="text-2xl font-thin text-center">
+              Packaging Design<br />(bottles and skin care kit)
             </p>
           </div>
         </Link>
@@ -38,7 +38,7 @@ export default function Page() {
               B.LABS
             </strong>
             <p className="text-2xl font-thin">
-              Packaging Design
+              Branding,packaging design
             </p>
           </div>
         </Link>
@@ -51,7 +51,7 @@ export default function Page() {
               TOXIC KNOBS
             </strong>
             <p className="text-2xl font-thin">
-              Packaging Design
+              Packaging design
             </p>
           </div>
         </Link>

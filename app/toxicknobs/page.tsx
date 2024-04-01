@@ -9,7 +9,7 @@ export default function Page() {
             <div className="py-10" style={{ display: "grid" }}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 py-2 sm:py-0">
                     <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>Toxic Knobs - packaging design</p>
-                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} >Packaging design for Toxic Knobs Gear Knob</p>
+                    <p className="text-left text-2xl py-2 sm:py-0 sm:px-8" style={{ fontWeight: "bold" }} >Packaging design <br />for Toxic Knobs Gear Knob</p>
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'>Packaging Design</h6 >
                 </div>
                 <div className='mt-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
@@ -49,7 +49,7 @@ export default function Page() {
                             Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            B-Labs
+                            B.Labs
                         </strong>
                     </div>
                 </Link>

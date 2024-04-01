@@ -58,7 +58,7 @@ export default function Page() {
                             Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            B-Labs
+                            B.Labs
                         </strong>
                     </div>
                 </Link>
