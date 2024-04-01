@@ -25,7 +25,7 @@ export default function Page() {
               DARIENZO
             </strong>
             <p className="text-2xl font-thin text-center">
-              Packaging Design<br />(bottles and skin care kit)
+              Packaging design<br />(bottles and skin care kit)
             </p>
           </div>
         </Link>
