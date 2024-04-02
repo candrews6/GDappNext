@@ -22,6 +22,7 @@ export default function Page() {
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/darienzo/001_3up.jpg" alt="3up darienzo"></img>
+                    <img loading="eager" src="images/darienzo/002_D_Bag_Sketch.jpg" alt="d bag sketch"></img>
                     <img loading="eager" src="images/darienzo/003_D_Stands.jpg" alt="d stands"></img>
                     <img loading="lazy" src="images/darienzo/004_front_open.jpg" alt="front open"></img>
 
@@ -30,6 +31,8 @@ export default function Page() {
                     <img loading="lazy" src="images/darienzo/006_D_Flat.jpg" alt="d flat"></img>
                     <img loading="lazy" src="images/darienzo/007_bagstreet.jpg" alt="bag street"></img>
                     <img loading="lazy" src="images/darienzo/008_D_Stack.jpg" alt="d stack"></img>
+                    <img loading="lazy" src="images/darienzo/008_posters_DZO.jpg" alt="posters"></img>
+                    
                     <img loading="lazy" src="images/darienzo/009front_back.jpg" alt="front back"></img>
 
                 </div>

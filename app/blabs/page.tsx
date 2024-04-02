@@ -9,12 +9,27 @@ export default function Page() {
             <div className="py-10" style={{ display: "grid" }}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 py-2 sm:py-0">
                     <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>B.labs</p>
-                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} >Branding and packaging design for B.labs Glassware</p>
-                    <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'> Branding, packaging design</h6 >
+                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} >Glass bong packaging</p>
+                    <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'> Brand identity, Packaging</h6 >
+                </div>
+                <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
+                    <div className='text w-full sm:w-1/2'>
+                        Most packaging is designed to be thrown away, I wanted to create packaging for a glass bong that you would want to keep forever.
+                        <br />
+                        <br />
+                        The packaging consists of a paper over board box with foiled logos, in a bright blue and clean white colour combination.
+                        <br />
+                        <br />
+                        The branding intentionally avoids the generic cannabis culture clichés giving it a more sophisticated and high end feel.
+                        <br />
+                        <br />
+                        Inside the box you will find the glassware incased in an acrylic display case. Not only does this protect the glassware, it becomes a product you would have on display.
+
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
                     <img loading="eager" src="images/blabs/001_Group.jpg" alt="Group"></img>
-                    <img loading="eager" src="images/blabs/002_Front Angled.jpg" alt="Front Angled"></img>
+                    <img loading="eager" src="images/blabs/002_B_Labs_Sketch.jpg" alt="Front Angled"></img>
                     <img loading="lazy" src="images/blabs/003_Close1.jpg" alt="Close 1"></img>
 
                     <img loading="lazy" src="images/blabs/004_Inside.jpg" alt="Inside"></img>
