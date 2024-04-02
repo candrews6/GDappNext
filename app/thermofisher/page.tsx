@@ -49,7 +49,7 @@ export default function Page() {
 
                 <Link href="/toxicknobs">
                     <div className=''>
-                        <img data-aos="fade-up" className="image" src="images/toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/Toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>

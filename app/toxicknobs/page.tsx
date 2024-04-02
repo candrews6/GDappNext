@@ -53,14 +53,14 @@ export default function Page() {
                         </strong>
                     </div>
                 </Link>
-                <Link href="/floofs">
+                <Link href="/thermofisher">
                     <div>
-                        <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/thermofisher/Thermofisher_scientific_Home_Image.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Floofs
+                            Thermofisher
                         </strong>
                     </div>
                 </Link>
