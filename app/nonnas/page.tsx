@@ -14,16 +14,10 @@ export default function Page() {
                 </div>
                 <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <div className='text w-full sm:w-1/2'>
-                        Most packaging is designed to be thrown away, I wanted to create packaging for a glass bong that you would want to keep forever.
+                        On a mission to get authentic Italian pasta onto the tables in every home, Nonnas' (Grandmother in Italian) pasta kits come with all the secret ingredients for you to cook up some delicious Italian magic that Nonna would be proud of.
                         <br />
                         <br />
-                        The packaging consists of a paper over board box with foiled logos, in a bright blue and clean white colour combination.
-                        <br />
-                        <br />
-                        The branding intentionally avoids the generic cannabis culture clichés giving it a more sophisticated and high end feel.
-                        <br />
-                        <br />
-                        Inside the box you will find the glassware incased in an acrylic display case. Not only does this protect the glassware, it becomes a product you would have on display.
+                        The packaging is made from a fully recyclable and bio-degradable board designed in a pouch shape. Earthy tones paired with bright accent colours and a bouncy sans serif type gives the brand and packaging a welcoming and fun feel, inviting anyone to grab a box and try some real italian classics.
 
                     </div>
                 </div>
@@ -42,7 +36,6 @@ export default function Page() {
                     </video>
 
                     <img loading="lazy" src="images/nonnas/008_nonna_Group2.jpg" alt="nonna group 2"></img>
-                    <img loading="lazy" src="images/nonnas/008_pbowl.jpg" alt="p bowl"></img>
                     <img loading="lazy" src="images/nonnas/009_nonna_LGE.jpg" alt="nonna lge"></img>
                     <img loading="lazy" src="images/nonnas/010_Penne_1.jpg" alt="penne 1"></img>
                     <img loading="lazy" src="images/nonnas/011_nnbb2.jpg" alt="nn bb"></img>
@@ -57,25 +50,25 @@ export default function Page() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
 
-                <Link href="/thermofisher">
+                <Link href="/blabs">
                     <div className=''>
-                        <img data-aos="fade-up" className="image" src="images/thermofisher/Thermofisher_scientific_Home_Image.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/blabs/B_labs_homeimage.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Thermofisher
+                            B.Labs
                         </strong>
                     </div>
                 </Link>
-                <Link href="/floofs">
+                <Link href="/thermofisher">
                     <div>
-                        <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/thermofisher/Thermofisher_scientific_Home_Image.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
-                            Packaging design
+                            Cardboard model replicas
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Floofs
+                            Thermofisher
                         </strong>
                     </div>
                 </Link>

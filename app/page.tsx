@@ -44,6 +44,32 @@ export default function Page() {
         </Link>
       </figure>
       <figure className="inline-block overflow-hidden relative group">
+        <Link href="/nonnas">
+          <img data-aos="fade-up" src="images/nonnas/001_group_Nonnas.jpg" alt="nonnas"></img>
+          <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
+              NONNAS
+            </strong>
+            <p className="text-2xl font-thin text-center">
+              Packaging design for pasta kit
+            </p>
+          </div>
+        </Link>
+      </figure>
+      <figure className="inline-block overflow-hidden relative group">
+        <Link href="/thermofisher">
+          <img data-aos="fade-up" src="images/thermofisher/Thermofisher_scientific_Home_Image.jpg" alt="thermofisher"></img>
+          <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
+              THERMOFISHER
+            </strong>
+            <p className="text-2xl font-thin text-center">
+              Cardboard model replicas
+            </p>
+          </div>
+        </Link>
+      </figure>
+      <figure className="inline-block overflow-hidden relative group">
         <Link href="/toxicknobs">
           <img data-aos="fade-up" src="images/Toxic knobs/home_Page_TK.jpg" alt="test3"></img>
           <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -56,32 +82,7 @@ export default function Page() {
           </div>
         </Link>
       </figure>
-      <figure className="inline-block overflow-hidden relative group">
-      <Link href="/thermofisher">
-        <img data-aos="fade-up" src="images/thermofisher/Thermofisher_scientific_Home_Image.jpg" alt="thermofisher"></img>
-        <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
-            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
-              THERMOFISHER
-            </strong>
-            <p className="text-2xl font-thin text-center">
-              Packaging design
-            </p>
-          </div>
-        </Link>
-      </figure>
-      <figure className="inline-block overflow-hidden relative group">
-      <Link href="/nonnas">
-        <img data-aos="fade-up" src="images/nonnas/001_group_Nonnas.jpg" alt="nonnas"></img>
-        <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
-            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
-              NONNAS
-            </strong>
-            <p className="text-2xl font-thin text-center">
-              Packaging design for pasta kit
-            </p>
-          </div>
-        </Link>
-      </figure>
+
       {/* <figure className="inline-block overflow-hidden relative group">
         <img data-aos="fade-up" src="images/alt3.png" alt="test7"></img>
       </figure>

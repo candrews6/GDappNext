@@ -60,14 +60,14 @@ export default function Page() {
                         </strong>
                     </div>
                 </Link>
-                <Link href="/toxicknobs">
+                <Link href="/nonnas">
                     <div>
-                        <img data-aos="fade-up" className="image" src="images/Toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/nonnas/001_group_Nonnas.jpg" alt='group nonnas'></img>
                         <p className="text-2xl font-thin">
-                            Packaging design
+                            Packaging design for pasta kit
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Toxic Knobs
+                            Nonnas
                         </strong>
                     </div>
                 </Link>
