@@ -11,7 +11,7 @@ export default function Page() {
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
               FLOOFS
             </strong>
-            <p className="text-2xl font-thin text-center">
+            <p className="text-2xl font-thin text-center mx-5">
               Branding,packaging design
             </p>
           </div>
@@ -24,7 +24,7 @@ export default function Page() {
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
               DARIENZO
             </strong>
-            <p className="text-2xl font-thin text-center">
+            <p className="text-2xl font-thin text-center mx-5">
               Packaging design<br />(bottles and skin care kit)
             </p>
           </div>
@@ -37,7 +37,7 @@ export default function Page() {
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
               B.LABS
             </strong>
-            <p className="text-2xl font-thin text-center">
+            <p className="text-2xl font-thin text-center mx-5">
               Branding,packaging design
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function Page() {
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
               NONNAS
             </strong>
-            <p className="text-2xl font-thin text-center">
+            <p className="text-2xl font-thin text-center mx-5">
               Packaging design for pasta kit
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function Page() {
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
               THERMOFISHER
             </strong>
-            <p className="text-2xl font-thin text-center">
+            <p className="text-2xl font-thin text-center mx-5">
               Cardboard model replicas
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function Page() {
             <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
               TOXIC KNOBS
             </strong>
-            <p className="text-2xl font-thin text-center">
+            <p className="text-2xl font-thin text-center mx-5">
               Packaging design
             </p>
           </div>
