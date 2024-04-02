@@ -81,14 +81,14 @@ export default function Page() {
             <hr style={{ height: "1px", border: "1px solid" }} className="gap-5 border-slate-400 text-slate-400"></hr>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
-                <Link href="/toxicknobs">
+                <Link href="/thermofisher">
                     <div>
-                        <img data-aos="fade-up" className="image" src="images/Toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/thermofisher/Thermofisher_scientific_Home_Image.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
-                            Packaging design
+                            Cardboard model replicas
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Toxic Knobs
+                            Thermofisher
                         </strong>
                     </div>
                 </Link>

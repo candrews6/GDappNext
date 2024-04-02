@@ -32,7 +32,7 @@ export default function Page() {
                     <img loading="lazy" src="images/darienzo/007_bagstreet.jpg" alt="bag street"></img>
                     <img loading="lazy" src="images/darienzo/008_D_Stack.jpg" alt="d stack"></img>
                     <img loading="lazy" src="images/darienzo/008_posters_DZO.jpg" alt="posters"></img>
-                    
+
                     <img loading="lazy" src="images/darienzo/009front_back.jpg" alt="front back"></img>
 
                 </div>
@@ -54,14 +54,14 @@ export default function Page() {
                     </div>
                 </Link>
 
-                <Link href="/blabs">
-                    <div className=''>
-                        <img data-aos="fade-up" className="image" src="images/blabs/B_labs_homeimage.jpg" alt='Header image'></img>
+                <Link href="/toxicknobs">
+                    <div>
+                        <img data-aos="fade-up" className="image" src="images/Toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            B.Labs
+                            Toxic Knobs
                         </strong>
                     </div>
                 </Link>

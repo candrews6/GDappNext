@@ -61,18 +61,17 @@ export default function Page() {
                         </strong>
                     </div>
                 </Link>
-                <Link href="/toxicknobs">
+                <Link href="/floofs">
                     <div>
-                        <img data-aos="fade-up" className="image" src="images/Toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Toxic Knobs
+                            Floofs
                         </strong>
                     </div>
                 </Link>
-
             </div>
         </div >
 

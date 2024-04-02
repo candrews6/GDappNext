@@ -43,25 +43,27 @@ export default function Page() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
 
-                <Link href="/thermofisher">
+
+                <Link href="/darienzo">
                     <div className=''>
-                        <img data-aos="fade-up" className="image" src="images/thermofisher/Thermofisher_scientific_Home_Image.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/darienzo/Home page image.jpg" alt='darienzo stack image'></img>
                         <p className="text-2xl font-thin">
-                            Cardboard model replicas
+                            Packaging design / Gift Box Design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Thermofisher
+                            Darienzo
                         </strong>
                     </div>
                 </Link>
-                <Link href="/floofs">
-                    <div>
-                        <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+
+                <Link href="/blabs">
+                    <div className=''>
+                        <img data-aos="fade-up" className="image" src="images/blabs/B_labs_homeimage.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Floofs
+                            B.Labs
                         </strong>
                     </div>
                 </Link>

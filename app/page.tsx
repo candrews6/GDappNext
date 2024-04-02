@@ -31,6 +31,19 @@ export default function Page() {
         </Link>
       </figure>
       <figure className="inline-block overflow-hidden relative group">
+        <Link href="/toxicknobs">
+          <img data-aos="fade-up" src="images/Toxic knobs/home_Page_TK.jpg" alt="test3"></img>
+          <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
+              TOXIC KNOBS
+            </strong>
+            <p className="text-2xl font-thin text-center mx-5">
+              Packaging design
+            </p>
+          </div>
+        </Link>
+      </figure>
+      <figure className="inline-block overflow-hidden relative group">
         <Link href="/blabs">
           <img data-aos="fade-up" src="images/blabs/B_labs_homeimage.jpg" alt="test4"></img>
           <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
@@ -65,19 +78,6 @@ export default function Page() {
             </strong>
             <p className="text-2xl font-thin text-center mx-5">
               Cardboard model replicas
-            </p>
-          </div>
-        </Link>
-      </figure>
-      <figure className="inline-block overflow-hidden relative group">
-        <Link href="/toxicknobs">
-          <img data-aos="fade-up" src="images/Toxic knobs/home_Page_TK.jpg" alt="test3"></img>
-          <div className="absolute inset-0 text-white bg-black bg-opacity-50 flex flex-col items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
-            <strong className="text-2xl relative transition-all duration-300 top-4 group-hover:top-0 text-center">
-              TOXIC KNOBS
-            </strong>
-            <p className="text-2xl font-thin text-center mx-5">
-              Packaging design
             </p>
           </div>
         </Link>

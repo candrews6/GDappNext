@@ -49,14 +49,14 @@ export default function Page() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
 
-                <Link href="/darienzo">
-                    <div className=''>
-                        <img data-aos="fade-up" className="image" src="images/darienzo/Home page image.jpg" alt='Header image'></img>
+                <Link href="/toxicknobs">
+                    <div>
+                        <img data-aos="fade-up" className="image" src="images/Toxic knobs/home_Page_TK.jpg" alt='Header image'></img>
                         <p className="text-2xl font-thin">
-                            Packaging design / Gift Box Design
+                            Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Darienzo
+                            Toxic Knobs
                         </strong>
                     </div>
                 </Link>
