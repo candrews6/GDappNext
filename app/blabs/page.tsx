@@ -15,14 +15,10 @@ export default function Page() {
                 <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <div className='text w-full sm:w-1/2'>
                         Most packaging is designed to be thrown away, I wanted to create packaging for a glass bong that you would want to keep forever.
-                        <br />
-                        <br />
                         The packaging consists of a paper over board box with foiled logos, in a bright blue and clean white colour combination.
                         <br />
                         <br />
                         The branding intentionally avoids the generic cannabis culture clichés giving it a more sophisticated and high end feel.
-                        <br />
-                        <br />
                         Inside the box you will find the glassware incased in an acrylic display case. Not only does this protect the glassware, it becomes a product you would have on display.
 
                     </div>
