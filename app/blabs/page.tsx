@@ -14,17 +14,13 @@ export default function Page() {
                 </div>
                 <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <div className='text w-full sm:w-1/2'>
-                        Most packaging is designed to be thrown away, I wanted to create packaging for a glass bong that you would want to keep forever.
+                        The startup "B-LABS" aimed to develop packaging for their handmade glassware that defied the typical disposable nature of most packaging. Embracing their brand guidelines, I sought to create packaging for their glass bong that customers would cherish forever.
                         <br />
                         <br />
-                        The packaging consists of a paper over board box with foiled logos, in a bright blue and clean white colour combination.
+                        Working within the allocated budget, I designed packaging that not only provided secure housing for the product but also served as a storage solution when not in use. For the outer packaging, I opted for a paper over board style box with foiled logos, the back of the box features an outline illustration of the product along with key features and product information, reflecting the brand's vibrant blue and pristine white colour scheme.
                         <br />
                         <br />
-                        The branding intentionally avoids the generic cannabis culture clichés giving it a more sophisticated and high end feel.
-                        <br />
-                        <br />
-                        Inside the box you will find the glassware incased in an acrylic display case. Not only does this protect the glassware, it becomes a product you would have on display.
-
+                        Conscious of avoiding stereotypical cannabis culture clichés, the branding and packaging exuded a refined and upscale aura. After presenting several concepts, the decision was made to adopt an acrylic display case. This design, also featuring the brand's signature blue and white hues, not only protects the glassware but also transformed it into a display-worthy item.
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">

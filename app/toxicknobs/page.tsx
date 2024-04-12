@@ -14,11 +14,14 @@ export default function Page() {
                 </div>
                 <div className='mt-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <div className='text w-full sm:w-1/2'>
-                        Independent gear knob manufacturer Toxic Knobs, were looking for a eco friendly packaging to house their hand crafted, recycled gear knobs.
-                        Each gear knob is hand made using ground down and reformed plastic bottles, To carry on the ethos of the product the packaging was made Using 100% recyclable card.
+                        Independent gear knob manufacturer Toxic Knobs, were looking for an eco friendly packaging to house their hand crafted recycled gear knobs. Each gear knob is hand made using ground down and reformed plastic bottles, to carry on the ethos of the product the packaging was made using 100% recyclable card.
                         <br />
                         <br />
-                        Incorporating the new branding into the design, I opted for tube packaging. this worked well in keeping it recyclable, but almost mirrored the brands visual identity. Designing the tube to have the feel of a science capsule.
+                        Incorporating the new branding into the design I opted for tube packaging. This worked well in keeping it recyclable and mirrored the brands visual identity. Designing the tube to have the feel of a science capsule. Expanding from the style of the typeface into the packaging design helped re-enforce the scientific theme along with a hint of their “Toxic neon green” into areas of the design to bring it all together.
+                        <br />
+                        <br />
+                        Speaking with the client and identifying their needs I incorporated into the design a product description section to be filled in by hand. This idea was to reduce waste from having pre-determined packaging that could only be used for a specific model of gear knob. This enables toxic knobs to have limitless options and production run sizes, which to the nature of demand and material availability is crucial.
+
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">

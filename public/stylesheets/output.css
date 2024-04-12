@@ -679,6 +679,10 @@ video {
   white-space: nowrap;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -776,6 +780,10 @@ video {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .transition-all {

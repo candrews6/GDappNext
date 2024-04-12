@@ -14,10 +14,19 @@ export default function Page() {
                 </div>
                 <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <div className='text w-full sm:w-1/2'>
-                        On a mission to get authentic Italian pasta onto the tables in every home, Nonnas' (Grandmother in Italian) pasta kits come with all the secret ingredients for you to cook up some delicious Italian magic that Nonna would be proud of.
+                        For this personal project, I set out to establish a brand dedicated to bringing authentic Italian pasta to every household.
                         <br />
                         <br />
-                        The packaging is made from a fully recyclable and bio-degradable board designed in a pouch shape. Earthy tones paired with bright accent colours and a bouncy sans serif type gives the brand and packaging a welcoming and fun feel, inviting anyone to grab a box and try some real italian classics.
+                        Nonnas' pasta kits, named after the Italian term for grandmother, provide all the secret ingredients needed to whip up authentic Italian dishes that would make Nonna proud.
+                        <br />
+                        <br />
+                        The packaging is crafted from fully recyclable and biodegradable materials, taking the form of a pouch for eco-friendliness.
+                        <br />
+                        <br />
+                        In terms of branding, I opted for earthy tones alongside vibrant accent colours. The use of a lively sans-serif typeface contributes to the welcoming and fun atmosphere of both the brand and packaging. Additionally, I incorporated a handwritten-style secondary typeface, aiming to evoke the feeling of a cherished family recipe passed down from generation to generation. This personal touch adds warmth to the brand and packaging.
+                        <br />
+                        <br />
+                        On the back of the packaging, a brand mascot featuring an image of my partner's Nonna, enhanced with a halftone effect and using colours corresponding to each product variant, serves to modernise the design and resonate with the target audience. The packaging and was was designed to invite customers to embrace the rich tradition of Italian cuisine by trying out the authentic pasta kits.
 
                     </div>
                 </div>

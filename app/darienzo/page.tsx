@@ -14,10 +14,16 @@ export default function Page() {
                 </div>
                 <div className='my-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <div className='text w-full sm:w-1/2'>
-                        I wanted to create memorable and quirky packaging for a range of cosmetic skin care products. Starting with branding and a strong visual identity I then translated it into bold, recognisable bottles and a bag style outer packaging to create a skin care kit.
+                        I aimed to craft distinctive and playful packaging for a line of skincare products amidst a crowded market. Recognising the necessity of standing out, I developed a vibrant brand characterised by bold packaging.
                         <br />
                         <br />
-                        The outer packaging needed to not only stand out but be sustainable. Opting for a 10mm thick board, made from Post consumer kraft that is fully recyclable and repulpable.
+                        Beginning with the creation of a robust brand identity I translated it into recognisable bottle designs. Opting for softly rounded bottles tapering at the top, I felt this aesthetic complemented the brand's essence evoking a sense of both care and a quirky nature. Utilising the brand's primary colours along with white for text, I used the teal to draw attention to key information.
+                        <br />
+                        <br />
+                        For the outer packaging, my goal was to design something memorable and conversation-worthy. After exploring various concepts I settled on the idea of the packaging doubling as a bag. This unique approach peaks curiosity among potential customers.
+                        <br />
+                        <br />
+                        Sustainability was paramount, leading me to select a 10mm thick board crafted from post-consumer kraft, which is fully recyclable and repulpable. This eco-conscious choice not only enhances the packaging's carbon footprint but also provides a sturdy and resilient solution suitable for travel.
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-y-5 pt-5" contextMenu="false">
