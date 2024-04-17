@@ -35,6 +35,7 @@ export default function Page() {
                     <img loading="lazy" src="images/blabs/007_Front.jpg" alt="Front"></img>
                     <img loading="lazy" src="images/blabs/008_Stacked.jpg" alt="Stacked"></img>
                     <img loading="lazy" src="images/blabs/009_blacktray.jpg" alt="Blacktray"></img>
+                    <img loading="lazy" src="images/blabs/b_labs_wall.jpg" alt="wall banner"></img>
 
                     <img loading="lazy" src="images/blabs/010_.jpg" alt="Sign"></img>
                 </div>
