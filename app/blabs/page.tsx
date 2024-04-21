@@ -9,7 +9,7 @@ export default function Page() {
             <div className="py-10" style={{ display: "grid" }}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 py-2 sm:py-0">
                     <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>B.labs</p>
-                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} >Glass bong packaging</p>
+                    <div className="text-left text-2xl py-2 sm:py-0 sm:px-8"><span className="text-xl" style={{ fontWeight: "600" }}>Brief:</span><span className="text-xl" style={{ fontWeight: "Normal" }}> To design glass bong packaging</span></div>
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'> Brand identity, Packaging</h6 >
                 </div>
                 <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>

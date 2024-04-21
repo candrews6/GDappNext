@@ -9,7 +9,7 @@ export default function Page() {
             <div className="py-10" style={{ display: "grid" }}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 py-2 sm:py-0">
                     <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>ThermoFisher Scientific</p>
-                    <p className="text-left text-2xl py-2 sm:py-0 sm:px-8" style={{ fontWeight: "bold" }} >Cardboard Model Replicas</p>
+                    <div className="text-left text-2xl py-2 sm:py-0 sm:px-12"><span className="text-xl" style={{ fontWeight: "600" }}>Brief:</span><span className="text-xl" style={{ fontWeight: "Normal" }}> To create realistic scale card replicas of various Thermofisher scientific equipment</span></div>
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 sm:pt-6 text-gray-500'> Die Creation, Illustration, art working</h6 >
                 </div>
                 <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
@@ -61,14 +61,14 @@ export default function Page() {
                         </strong>
                     </div>
                 </Link>
-                <Link href="/floofs">
+                <Link href="/howdens">
                     <div>
-                        <img data-aos="fade-up" className="image" src="images/HomepageHeaderImage.jpg" alt='Header image'></img>
+                        <img data-aos="fade-up" className="image" src="images/howdens/001_group_1.jpg" alt='howdens'></img>
                         <p className="text-2xl font-thin">
                             Packaging design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Floofs
+                            Howdens
                         </strong>
                     </div>
                 </Link>

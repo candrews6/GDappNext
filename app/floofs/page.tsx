@@ -39,7 +39,7 @@ export default function Page() {
             <div className="py-10" style={{ display: "grid" }}>
                 <div className="grid grid-cols-1 sm:grid-cols-2">
                     <p className="text-left text-4xl py-2 sm:py-0" style={{ fontWeight: "bold" }}>FLOOFS - Bottle design</p>
-                    <p className="text-left text-2xl py-2 sm:py-0" style={{ fontWeight: "bold" }} > A range of dog shampoo bottle designs for FLOOFS</p>
+                    <div className="text-left text-2xl py-2 sm:py-0"><span className="text-xl" style={{ fontWeight: "600" }}>Brief:</span><span className="text-xl" style={{ fontWeight: "Normal" }}> To create a range of dog shampoo bottle designs for FLOOFS (Personal Project)</span></div>
                     <h6 className='w-full sm:w-1/2 py-2 sm:py-0 text-gray-500'> Packaging(Bottle Design), Art Direction Illustration, Print Design, Typography</h6 >
                 </div>
                 <div className='my-4 roboto.className' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
@@ -81,14 +81,14 @@ export default function Page() {
             <hr style={{ height: "1px", border: "1px solid" }} className="gap-5 border-slate-400 text-slate-400"></hr>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10 z-0 pointer-events-none" contextMenu="return false">
-                <Link href="/thermofisher">
-                    <div>
-                        <img data-aos="fade-up" className="image" src="images/thermofisher/Thermofisher_scientific_Home_Image.jpg" alt='Header image'></img>
+                <Link href="/magickmakers">
+                    <div className=''>
+                        <img data-aos="fade-up" className="image" src="images/magickmakers/001_Box_bottle.jpg" alt='magick makers'></img>
                         <p className="text-2xl font-thin">
-                            Cardboard model replicas
+                            Bottle and box design
                         </p>
                         <strong className="text-2xl relative transition-all duration-300 top-1 group-hover:top-0">
-                            Thermofisher
+                            Magick Makers
                         </strong>
                     </div>
                 </Link>
