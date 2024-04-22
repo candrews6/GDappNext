@@ -14,7 +14,7 @@ export default function Page() {
                 </div>
                 <div className='mt-4' style={{ whiteSpace: 'pre-wrap', fontFamily: 'Roboto' }}>
                     <div className='text w-full sm:w-1/2'>
-                        For the launch of Howdens “paint to order scheme they wanted to hand out commemorative bottles of champagne to the attendees. They wanted a box to house the bottles personalised and branded to the event.
+                        For the launch of Howdens “paint to order’’ scheme they wanted to hand out commemorative bottles of champagne to the attendees. They wanted a box to house the bottles personalised and branded to the event.
                         <br />
                         <br />
                         Working with my art director we put together some options to present to the client. The chosen design was based on the “paint to order’’ brochure that would be getting released after the event.
