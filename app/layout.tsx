@@ -77,14 +77,14 @@ C5125.83,240.48,5217.11,264.11,5217.11,355.93z">
                 </div>
                 {children}
                 {/* <div className='w-screen sm:w-10/12 px-5 sm:px-14'> */}
-                <footer className="w-full grid grid-cols-12 px-4 sm:px-14 py-10">
+                <footer className="w-full grid grid-cols-12 px-4 sm:px-14 py-10 justify-items-end">
                     <img className="grid-start col-span-4 sm:col-span-2 w-full" src="images/copyright_Bottom-01.svg" alt="" />
-                    <div className='col-start-11 sm:col-start-12 sm:row-start-1 w-full sm:w-1/2'>
+                    <div className='col-start-11 sm:col-start-11 sm:row-start-1 w-full sm:w-1/2'>
                         <Link className="" href="https://www.linkedin.com/in/grant-davies-11685518b/" >
                             <img src="images/Linkedin_Icon-01.svg" alt="" />
                         </Link>
                     </div>
-                    <div className='col-start-12 sm:row-start-1 w-full sm:w-1/2 text-right justify-self-end'>
+                    <div className='col-start-12 sm:col-start-12 sm:row-start-1 w-full sm:w-1/2'>
                         <Link className="" href="mailto:baineuk@gmail.com" >
                             <img src="images/email_Icon-01.svg" alt="" />
                         </Link>
